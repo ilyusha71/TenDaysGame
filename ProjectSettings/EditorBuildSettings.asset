@@ -50,4 +50,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Freaky Lab 1.unity
     guid: 6dcb7adf6964aaf4b97b8b2432e00138
+  - enabled: 1
+    path: Assets/Cat Bingo.unity
+    guid: 89aa5a81692ae2a4f911a3fc6a5c5a2f
+  - enabled: 1
+    path: Assets/Lucky Roulette.unity
+    guid: 7c37504018d18b94cac22ed8fd851fb0
+  - enabled: 1
+    path: Assets/Hydrangea Palace.unity
+    guid: c3e7a00734541604097bbd576b0c49ca
+  - enabled: 1
+    path: Assets/DoraraLite.unity
+    guid: 41ae911dc277eb348852233dc609b273
   m_configObjects: {}
