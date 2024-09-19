@@ -9,6 +9,7 @@ public class RevolverController : MonoBehaviour, IPointerDownHandler
 {
     public Sprite[] color;
     private Image cylinder;
+    public GameObject seal;
     int index=0;
     bool rotate;
     private void Awake()
@@ -18,6 +19,7 @@ public class RevolverController : MonoBehaviour, IPointerDownHandler
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.S)) seal.SetActive(!seal.activeSelf);
         if (Input.GetKeyDown(KeyCode.R)) Rotate();
         if (Input.GetKeyDown(KeyCode.E)) Stop();
         if (Input.GetKeyDown(KeyCode.Alpha1)) Clockwise(1);

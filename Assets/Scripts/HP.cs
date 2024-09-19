@@ -27,12 +27,18 @@ public class HP : MonoBehaviour, IPointerClickHandler
 
     public void Double()
     {
+        hp.enabled = true;
         maxHP = (maxHP - 1) * 2 + 1;
         hp.text = (maxHP - 1).ToString();
     }
     public void Half()
     {
+        hp.enabled = true;
         maxHP = (int)((maxHP - 1) * 0.5f + 1);
         hp.text = (maxHP - 1).ToString();
+    }
+    public void Hide()
+    {
+        hp.enabled = false;
     }
 }

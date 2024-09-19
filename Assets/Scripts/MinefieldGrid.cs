@@ -27,6 +27,7 @@ public class MinefieldGrid : MonoBehaviour
     {
         if (!grid) grid = GetComponent<Image>();
         grid.color = clear;
+        index = 0;
     }
 
     public void Draw()

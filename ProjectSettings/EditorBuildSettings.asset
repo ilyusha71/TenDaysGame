@@ -25,7 +25,7 @@ EditorBuildSettings:
     guid: da6054e21f48b8e4f884660bffa76517
   - enabled: 1
     path: Assets/Minefield Assault.unity
-    guid: 6c6ea0b4e98ac4e448982b1435a8cd65
+    guid: 76b9ca92036c8214e8d8b530db4d63dc
   - enabled: 1
     path: Assets/Ambush Enigma.unity
     guid: 82cfb1d213340034d9267253e0b50605
@@ -62,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DoraraLite.unity
     guid: 41ae911dc277eb348852233dc609b273
+  - enabled: 1
+    path: Assets/The Wonderland of Life and Death.unity
+    guid: 5617184190b970b4bb9ca56d34a77271
+  - enabled: 1
+    path: Assets/Cat Card.unity
+    guid: 106b7354905db4c47bfe2b048676227b
   m_configObjects: {}

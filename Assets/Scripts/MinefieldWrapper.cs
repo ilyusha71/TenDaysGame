@@ -17,4 +17,9 @@ public class MinefieldWrapper : MonoBehaviour
         wrapper.SetActive( !wrapper.activeSelf);
         index.enabled = !index.enabled;
     }
+    public void Clear()
+    {
+        wrapper.SetActive(true);
+        index.enabled = true;
+    }
 }

@@ -4986,6 +4986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 930250251}
+  - component: {fileID: 930250252}
   m_Layer: 5
   m_Name: Chess
   m_TagString: Untagged
@@ -5047,6 +5048,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &930250252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930250250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a37db2b142db2dc499ad4d31c1cebc83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots:
+  - {fileID: 92658398}
+  - {fileID: 1420155831}
+  - {fileID: 34259122}
+  - {fileID: 1541489174}
+  - {fileID: 342376997}
+  - {fileID: 411663895}
+  - {fileID: 66139980}
+  - {fileID: 1667601513}
+  - {fileID: 2059328114}
+  - {fileID: 7561738}
+  - {fileID: 120388373}
+  - {fileID: 2124213198}
+  - {fileID: 1015601130}
+  - {fileID: 731220410}
+  - {fileID: 544941645}
+  - {fileID: 62406089}
+  - {fileID: 1036339700}
+  - {fileID: 210824885}
+  - {fileID: 1178381209}
+  - {fileID: 260454564}
+  - {fileID: 372566536}
+  - {fileID: 188230593}
+  - {fileID: 947794347}
+  - {fileID: 607626122}
+  - {fileID: 1801378290}
+  - {fileID: 997265566}
+  - {fileID: 1330279399}
+  - {fileID: 757875011}
+  - {fileID: 1093806516}
+  - {fileID: 731456435}
+  - {fileID: 1839213142}
+  - {fileID: 1117282730}
+  lotteryPool: []
+  pos: []
 --- !u!1001 &947794346
 PrefabInstance:
   m_ObjectHideFlags: 0
