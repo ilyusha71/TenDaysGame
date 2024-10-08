@@ -1608,6 +1608,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &469291800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2749,6 +2753,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &803116165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13563,6 +13571,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &1282067138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13852,6 +13864,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &1338552574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13942,8 +13958,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: 82}
-  m_SizeDelta: {x: 1240, y: 2066}
+  m_AnchoredPosition: {x: -52, y: 81.5}
+  m_SizeDelta: {x: 1240.2, y: 2067}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1348854578
 MonoBehaviour:
@@ -13965,7 +13981,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 00262aa62d257384ea3703b6877d2399, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a853d0a27006744bbf99bb16449211f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14536,6 +14552,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &1421942718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14821,6 +14841,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &1462991821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19523,6 +19547,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &1752276357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20783,6 +20811,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 1
   reversible: 0
+  alphaHit: 0
+  fixOrder: 0
+  main: {fileID: 0}
+  backup: []
 --- !u!114 &1634008019812222049
 MonoBehaviour:
   m_ObjectHideFlags: 0

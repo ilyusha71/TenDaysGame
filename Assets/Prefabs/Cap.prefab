@@ -211,6 +211,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   copy: 0
   reversible: 0
+  alphaHit: 1
+  main: {fileID: 0}
+  backup: []
 --- !u!1 &8483316378549231125
 GameObject:
   m_ObjectHideFlags: 0

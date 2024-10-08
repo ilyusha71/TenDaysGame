@@ -63,9 +63,18 @@ EditorBuildSettings:
     path: Assets/DoraraLite.unity
     guid: 41ae911dc277eb348852233dc609b273
   - enabled: 1
-    path: Assets/The Wonderland of Life and Death.unity
+    path: Assets/The Wonderland.unity
     guid: 5617184190b970b4bb9ca56d34a77271
   - enabled: 1
     path: Assets/Cat Card.unity
     guid: 106b7354905db4c47bfe2b048676227b
+  - enabled: 1
+    path: Assets/Sorcery Duel of Limits.unity
+    guid: 2e7f3877b5ce20447ac76d182f44ad58
+  - enabled: 1
+    path: Assets/Cat Leaping Gorge.unity
+    guid: aa9e627fa9a016542a1d56e4bc979ce7
+  - enabled: 1
+    path: Assets/PlayerPanel.unity
+    guid: e728f920894ff7447a7ecdea68e44fd6
   m_configObjects: {}

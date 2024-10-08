@@ -24,6 +24,8 @@ public class RearrangeController : MonoBehaviour
             ReturnSlots();
         if (Input.GetKeyDown(KeyCode.R))
             RandomlyAllocate();
+        if (Input.GetKeyDown(KeyCode.F5))
+            Shuffle(new Vector3(Screen.width*0.5f,Screen.height*0.5f,0));
     }
     void ReturnSlots()
     {
@@ -40,6 +42,15 @@ public class RearrangeController : MonoBehaviour
             int index = Random.Range(0, rand.Count);
             slots[i].position = rand[index];
             rand.Remove(rand[index]);
+        }
+    }
+
+    public void Shuffle(Vector3 v)
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            slots[i].position = v;
+            slots[i].SetSiblingIndex(Random.Range(0, slots.Length));
         }
     }
 }

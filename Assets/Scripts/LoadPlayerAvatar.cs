@@ -19,16 +19,16 @@ public class LoadPlayerAvatar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad0))
+        if (Input.GetKeyDown(KeyCode.Home))
             Cat();
-        if (Input.GetKeyDown(KeyCode.Keypad1))
-            StartCoroutine(Reload(1));
-        if (Input.GetKeyDown(KeyCode.Keypad2))
-            StartCoroutine(Reload(2));
-        if (Input.GetKeyDown(KeyCode.Keypad4))
-            StartCoroutine(ReloadByName(1));
-        if (Input.GetKeyDown(KeyCode.Keypad5))
-            StartCoroutine(ReloadByName(2));
+        //if (Input.GetKeyDown(KeyCode.Keypad1))
+        //    StartCoroutine(Reload(1));
+        //if (Input.GetKeyDown(KeyCode.Keypad2))
+        //    StartCoroutine(Reload(2));
+        //if (Input.GetKeyDown(KeyCode.Keypad4))
+        //    StartCoroutine(ReloadByName(1));
+        //if (Input.GetKeyDown(KeyCode.Keypad5))
+        //    StartCoroutine(ReloadByName(2));
 
     }
     public void Cat()
