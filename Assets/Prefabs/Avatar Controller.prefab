@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 1365960541503732757}
   - component: {fileID: 8277338234430779879}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -776,7 +776,7 @@ RectTransform:
   m_GameObject: {fileID: 5675375621962445687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3426166934249742478}
@@ -1208,7 +1208,7 @@ GameObject:
   - component: {fileID: 7662361018096798461}
   - component: {fileID: 7500282502248920459}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
