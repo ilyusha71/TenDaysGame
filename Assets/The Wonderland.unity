@@ -6981,6 +6981,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.14509805
       objectReference: {fileID: 0}
+    - target: {fileID: 392674726048470615, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Text
+      value: "\u6697\u4EBA\u683C"
+      objectReference: {fileID: 0}
     - target: {fileID: 446201716038716160, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Color.a
       value: 0.5372549
@@ -7009,6 +7013,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 337
       objectReference: {fileID: 0}
+    - target: {fileID: 2680948426513743689, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c86528ef11627984b8898b4d7b7ba477, type: 3}
+    - target: {fileID: 3698568983535207776, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698568983535207776, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 330
+      objectReference: {fileID: 0}
     - target: {fileID: 3748136500481446610, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Text
       value: "\u4E3B\u4EBA\u683C"
@@ -7020,6 +7036,18 @@ PrefabInstance:
     - target: {fileID: 6111125581378616322, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Text
       value: "\u6697\u4EBA\u683C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791285041263862110, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Text
+      value: "\u4E3B\u4EBA\u683C"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502863609097400937, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 330
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502863609097400937, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 330
       objectReference: {fileID: 0}
     - target: {fileID: 8064602822318935247, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_SizeDelta.x
@@ -7109,6 +7137,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9113269373097609280, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 760f93fc8ad36994e88bdab105b1dd73, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

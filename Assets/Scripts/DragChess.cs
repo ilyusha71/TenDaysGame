@@ -6,7 +6,11 @@ using UnityEngine.UI;
 
 public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropHandler
 {
-    public bool copy =true;
+    [Header("Store")]
+    public bool store = false;
+    public Transform clonePool;
+    [Header("General")]
+    public bool copy = true;
     public bool reversible = false;
     public bool alphaHit = false;
     public bool fixOrder = false;
@@ -14,12 +18,12 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
 
     public Sprite[] backup;
     int spriteIndex;
- protected   Vector3 pos;
+    protected Vector3 pos;
     // Start is called before the first frame update
     void Start()
     {
         pos = transform.position;
-        if(!alphaHit)
+        if (!alphaHit)
             GetComponent<Image>().alphaHitTestMinimumThreshold = 0.3f;
         else
             SetAlphaHit();
@@ -37,8 +41,8 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
             GameObject go = Instantiate(gameObject);
             go.transform.SetParent(transform.parent, false);
             go.transform.position = transform.position;
-        }
-        if (Input.GetMouseButtonDown(2) && backup.Length > 0)
+        }        
+        if (data.clickCount > 0 && backup.Length > 0)
         {
             spriteIndex++;
             spriteIndex = (int)Mathf.Repeat(spriteIndex, 2);
@@ -50,17 +54,32 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
             f++;
             GetComponent<CanvasGroup>().alpha = Mathf.Repeat(f, 1);
         }
+
+        if (Input.GetMouseButtonDown(0) && store)
+        {
+            GameObject go = Instantiate(gameObject);
+            go.name = name;
+            go.transform.SetParent(transform.parent, false);
+            go.transform.position = transform.position;
+
+            transform.SetParent(clonePool);
+            GetComponent<DragChess>().store = false;
+        }
+        if (Input.GetKey(KeyCode.Delete) && !store)
+            Destroy(gameObject);
+
         if (!fixOrder)
             transform.SetSiblingIndex(99);
         pos= transform.position- Input.mousePosition; 
     }
     public void OnDrag(PointerEventData data)
     {
-        transform.position = Input.mousePosition+ pos;
+        if(!store)
+            transform.position = Input.mousePosition+ pos;
     }
     public void OnDrop(PointerEventData data)
     {
-        EventSystem.current.SetSelectedGameObject(null);
+        //EventSystem.current.SetSelectedGameObject(null);
     }
 
     void SetAlphaHit()

@@ -29,11 +29,14 @@ public class MinefieldGrid : MonoBehaviour
         grid.color = clear;
         index = 0;
     }
-
     public void Draw()
     {
         index++;
         index=(int)Mathf.Repeat(index, 5);
         grid.color=draw[index];
+    }
+    public void Set(int i)
+    {
+        index = i; grid.color = draw[index];
     }
 }

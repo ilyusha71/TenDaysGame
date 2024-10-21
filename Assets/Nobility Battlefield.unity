@@ -1700,9 +1700,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Avatar Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 4041975329243818225, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.a
+      value: 0.36862746
+      objectReference: {fileID: 0}
     - target: {fileID: 4169048667063469255, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Color.a
       value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159467163288870904, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.a
+      value: 0.36862746
       objectReference: {fileID: 0}
     - target: {fileID: 8351540236058992488, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Pivot.x
