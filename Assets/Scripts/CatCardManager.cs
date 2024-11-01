@@ -6,16 +6,25 @@ using UnityEngine.UI;
 public class CatCardManager : MonoBehaviour
 {
     public GameObject[] games;
+
+    [Header("The King and the Slave: Blind")]
+    public Vector3[] slots;
+    public CardController[] random10;
+
+
     public GameObject deck;
     public GameObject shuffle;
-    public Image[] cover;
 
     public GameObject[] ksGame;
     int ks;
     // Start is called before the first frame update
     void Start()
     {
-        
+        slots = new Vector3[random10.Length];
+        for (int i = 0; i < random10.Length; i++)
+        {
+            slots[i]= random10[i].transform.position;
+        }
     }
 
     // Update is called once per frame
@@ -23,7 +32,7 @@ public class CatCardManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F1))
         {
-            for (int i = 0; i < games.Length; i++) 
+            for (int i = 0; i < games.Length; i++)
             {
                 games[i].SetActive(false);
             }
@@ -45,19 +54,33 @@ public class CatCardManager : MonoBehaviour
             }
             games[2].SetActive(true);
         }
-        //if (Input.GetKeyDown(KeyCode.Alpha1))
-        //    cover[0].enabled = !cover[0].enabled;
-        //if (Input.GetKeyDown(KeyCode.Alpha2))
-        //    cover[1].enabled = !cover[1].enabled;
-        //if (Input.GetKeyDown(KeyCode.Alpha3))
-        //    cover[2].enabled = !cover[2].enabled;
-        //if (Input.GetKeyDown(KeyCode.Alpha4))
-        //    cover[3].enabled = !cover[3].enabled;
 
         if (Input.GetKeyDown(KeyCode.D))
             deck.SetActive(!deck.activeSelf);
         if (Input.GetKeyDown(KeyCode.S))
             shuffle.SetActive(!shuffle.activeSelf);
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            for (int i = 0; i < random10.Length; i++)
+            {
+                random10[i].Flop();
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            for (int i = 0; i < random10.Length; i++)
+            {
+                random10[i].Fold();
+                for (int j = 0; j < slots.Length; j++)
+                {
+                    if (random10[i].transform.position == slots[j])
+                        random10[i].back.GetComponentInChildren<Text>().text = (j + 1).ToString();
+                }
+            }
+        }
+
+
     }
 
     public void Ready()

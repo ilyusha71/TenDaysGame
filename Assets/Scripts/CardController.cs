@@ -39,15 +39,22 @@ public class CardController : DragChess
             GetComponent<CardController>().store = false;
         }
         if (Input.GetMouseButtonDown(1) && back)
-        {
-            face.SetActive(!face.activeSelf);
-            back.SetActive(!back.activeSelf);
-        }
+            Flop();
         if (Input.GetKey(KeyCode.Delete) && !store)
             Destroy(gameObject);
 
         if (!fixOrder)
             transform.SetSiblingIndex(99);
         pos = transform.position - Input.mousePosition;
+    }
+    public void Flop()
+    {
+        face.SetActive(!face.activeSelf);
+        back.SetActive(!back.activeSelf);
+    }
+    public void Fold()
+    {
+        face.SetActive(false);
+        back.SetActive(true);
     }
 }

@@ -9,6 +9,8 @@ public class Counter : MonoBehaviour, IPointerDownHandler
     public Text count;
     public int max;
     public bool add = false;
+    public int level = 1;
+    public bool hideZero = false;
     private void Reset()
     {
         if (count == null) count = GetComponent<Text>();
@@ -19,16 +21,18 @@ public class Counter : MonoBehaviour, IPointerDownHandler
         int i = int.Parse(count.text);
         if (!add)
         {
-            if (Input.GetMouseButton(0)) i--;
-            else if (Input.GetMouseButtonDown(1)) i++;
+            if (Input.GetMouseButton(0)) i-=level;
+            else if (Input.GetMouseButtonDown(1)) i+=level;
         }
         else
         {
-            if (Input.GetMouseButton(0)) i++;
-            else if (Input.GetMouseButtonDown(1)) i--;
+            if (Input.GetMouseButton(0)) i+=level;
+            else if (Input.GetMouseButtonDown(1)) i-=level;
         }        
         i = (int)Mathf.Repeat(i, max);
         count.text = i.ToString();
+        //if (hideZero && i==0)
+        //    count.text = "¡@";
     }
     public void Double()
     {

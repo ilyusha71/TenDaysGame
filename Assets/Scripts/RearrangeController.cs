@@ -34,7 +34,7 @@ public class RearrangeController : MonoBehaviour
             slots[i].position = pos[i];
         }
     }
-    void RandomlyAllocate()
+    public void RandomlyAllocate()
     {
         List<Vector3> rand = lotteryPool.ToList();
         for (int i = 0; i < slots.Length; i++)

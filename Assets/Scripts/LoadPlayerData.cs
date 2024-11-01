@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -22,6 +24,7 @@ public class LoadPlayerData : MonoBehaviour
     public Image player;
     public InputField input;
     public GameObject[] pages;
+    int index;
     public Text info;
     public Text catbell;
     public Text casino;
@@ -41,49 +44,109 @@ public class LoadPlayerData : MonoBehaviour
     [Header("Tasting Panel")]
     public GameObject tastingPanel;
     public Text[] tasting;
-    [Header("Stage Clash")]
-    public Text[] scRecords;
+
     [Header("Royal Trade War")]
     public Text[] rtwRecords;
     [Header("Minefield Assault")]
     public Text[] maRecords;
+
+
+
+
+
+
     private void Awake()
     {
         items = itemPanel.GetComponentsInChildren<Text>();
         skills = skillPanel.GetComponentsInChildren<Text>();
         npc = npcPanel.GetComponentsInChildren<Text>();
         tasting = tastingPanel.GetComponentsInChildren<Text>();
+        equipment.Initialize();
+        bag.Initialize();
+        consumable.Initialize();
+        missionItem.Initialize();
+        book.Initialize();
+        life.Initialize();
+        adventure.Initialize();
+        combat.Initialize();
+        knowledge.Initialize();
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.PageDown))
         {
-            pages[0].SetActive(true);
-            pages[1].SetActive(false);
-            pages[2].SetActive(false); 
-            pages[3].SetActive(false);
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index++;
+            index = (int)Mathf.Repeat(index, pages.Length);
+            pages[index].SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.F1))
+        else if (Input.GetKeyDown(KeyCode.PageUp))
         {
-            pages[0].SetActive(false);
-            pages[1].SetActive(true);
-            pages[2].SetActive(false); 
-            pages[3].SetActive(false);
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index--;
+            index = (int)Mathf.Repeat(index, pages.Length);
+            pages[index].SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.F2))
+        else if (Input.GetKeyDown(KeyCode.End))
         {
-            pages[0].SetActive(false);
-            pages[1].SetActive(false);
-            pages[2].SetActive(true);
-            pages[3].SetActive(false);
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = pages.Length - 1;
+            pages[index].SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.F3))
+        else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            pages[0].SetActive(false);
-            pages[1].SetActive(false);
-            pages[2].SetActive(false);
-            pages[3].SetActive(true);
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 0;
+            pages[index].SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.F1))
+        {
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 1;
+            pages[index].SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.F2))
+        {
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 2;
+            pages[index].SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.F3))
+        {
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 3;
+            pages[index].SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.F4))
+        {
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 4;
+            pages[index].SetActive(true);
         }
         if (Input.GetKeyDown(KeyCode.F12))
         {
@@ -97,16 +160,37 @@ public class LoadPlayerData : MonoBehaviour
         StartCoroutine(ReloadPrestige(input.text));
         StartCoroutine(ReloadSkills(input.text));
         StartCoroutine(ReloadItems(input.text));
-        StartCoroutine(ReloadChampionship(input.text));
+        //StartCoroutine(ReloadChampionship(input.text));
+
         // Page 2
-        StartCoroutine(ReloadStageClash(input.text));
-     
+        StartCoroutine(equipment.ReloadLists(input.text));
+        StartCoroutine(bag.ReloadLists(input.text));
+        StartCoroutine(consumable.ReloadLists(input.text));
+        StartCoroutine(missionItem.ReloadLists(input.text));
+        StartCoroutine(book.ReloadLists(input.text));
+
+        // Page 3
+        StartCoroutine(life.ReloadLists(input.text));
+        StartCoroutine(adventure.ReloadLists(input.text));
+        StartCoroutine(combat.ReloadLists(input.text));
+        StartCoroutine(knowledge.ReloadLists(input.text));
+
+        // Page 3
+        //StartCoroutine(ReloadStageClash(input.text));
+
         StartCoroutine(ReloadNPC(input.text));
         StartCoroutine(ReloadTasting(input.text));
         StartCoroutine(ReloadPets(input.text));
-        // Page 3
-        StartCoroutine(ReloadRoyalTradeWar(input.text));
-        StartCoroutine(ReloadMinefieldAssault(input.text));
+        // Page 4
+     
+
+
+        StartCoroutine(stageClash.ReloadRecords(input.text));
+        StartCoroutine(royalTradeWar.ReloadRecords(input.text));
+        StartCoroutine(minefieldAssault.ReloadRecords(input.text));
+        StartCoroutine(wod.ReloadRecords(input.text));
+        StartCoroutine(dungeonConquest.ReloadRecords(input.text));
+        StartCoroutine(record.ReloadText(input.text));
 
     }
     IEnumerator ReloadPlayerList()
@@ -330,33 +414,7 @@ public class LoadPlayerData : MonoBehaviour
             }
         }
     }
-    IEnumerator ReloadStageClash(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_驿站风云.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\t");
-                for (int i = 0; i < scRecords.Length; i++)
-                {
-                    if (i < contents.Length)
-                        scRecords[i].text = contents[i];
-                    else
-                        scRecords[i].text = "";
-                }
-            }
-            else
-            {
-                for (int i = 0; i < scRecords.Length; i++)
-                {
-                    scRecords[i].text = "";
-                }
-            }
-        }
-    }
+    
     IEnumerator ReloadRoyalTradeWar(string nick)
     {
         string url = Application.streamingAssetsPath + "/" + nick + "_皇家商贸战.txt";
@@ -480,6 +538,109 @@ public class LoadPlayerData : MonoBehaviour
             else
             {
                 pets.text = "";
+            }
+        }
+    }
+
+    [Header("Page 2 Equipment")]
+    public ReloadList equipment;
+    [Header("Page 2 Bag")]
+    public ReloadList bag;
+    [Header("Page 2 Consumable")]
+    public ReloadList consumable;
+    [Header("Page 2 Mission Item")]
+    public ReloadList missionItem;
+    [Header("Page 2 Book")]
+    public ReloadList book;
+
+    [Header("Page 3 Life")]
+    public ReloadList life;
+    [Header("Page 3 Adventure")]
+    public ReloadList adventure;
+    [Header("Page 3 Combat")]
+    public ReloadList combat;
+    [Header("Page 3 Knowledge")]
+    public ReloadList knowledge;
+
+
+
+    [Header("Stage Clash")]
+    public Text[] scRecords;
+    public ReloadList stageClash;
+    [Header("Royal Trade War")]
+    public ReloadList royalTradeWar;
+    [Header("Minefield Assault")]
+    public ReloadList minefieldAssault;
+    [Header("The Wonderland of Desperation")]
+    public ReloadList wod;
+    [Header("Dungeon Conquest")]
+    public ReloadList dungeonConquest;
+    [Header("Record")]
+    public ReloadList record;
+
+    [Serializable]
+    public class ReloadList
+    {
+        public GameObject panel;
+        public Text[] list;
+        public string title;
+        public void Initialize()
+        {
+            list = panel.GetComponentsInChildren<Text>();
+        }
+        public IEnumerator ReloadText(string nick)
+        {
+            string url = Application.streamingAssetsPath + "/" + nick + "_" + title + ".txt";
+            using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+            {
+                // Request and wait for the desired page.
+                yield return webRequest.SendWebRequest();
+                if (string.IsNullOrEmpty(webRequest.error))
+                {
+                    list[0].text = webRequest.downloadHandler.text;
+                }
+                else
+                {
+                    list[0].text = "无记录";
+                }
+            }
+        }
+        public IEnumerator ReloadLists(string nick)
+        {
+            string url = Application.streamingAssetsPath + "/" + nick + "_"+ title+".txt";
+            using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+            {
+                // Request and wait for the desired page.
+                yield return webRequest.SendWebRequest();
+                if (string.IsNullOrEmpty(webRequest.error))
+                {
+                    string[] contents = webRequest.downloadHandler.text.Split("\r\n");
+                    for (int i = 0; i < list.Length; i++)
+                    {
+                        if (i < contents.Length) list[i].text = contents[i];
+                        else list[i].text = "";
+                    }
+                }
+                else { for (int i = 0; i < list.Length; i++) { list[i].text = ""; } }
+            }
+        }
+        public IEnumerator ReloadRecords(string nick)
+        {
+            string url = Application.streamingAssetsPath + "/" + nick + "_" + title + ".txt";
+            using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+            {
+                // Request and wait for the desired page.
+                yield return webRequest.SendWebRequest();
+                if (string.IsNullOrEmpty(webRequest.error))
+                {
+                    string[] contents = webRequest.downloadHandler.text.Split("\t");
+                    for (int i = 0; i < list.Length; i++)
+                    {
+                        if (i < contents.Length) list[i].text = contents[i];
+                        else list[i].text = "";
+                    }
+                }
+                else { for (int i = 0; i < list.Length; i++) { list[i].text = ""; } }
             }
         }
     }

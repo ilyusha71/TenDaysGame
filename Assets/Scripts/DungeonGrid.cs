@@ -36,11 +36,16 @@ public class DungeonGrid : MonoBehaviour
         maxPlayer = max;
     }
 
-    public void Clear()
+    //public void Clear()
+    //{
+    //    grid.color = clear;
+    //}
+    public void Occupy(int i)
     {
-        grid.color = clear;
+        index = i;
+        grid.color = draw[index];
+        manager.CalculateGrids();
     }
-
     public void Draw()
     {
         //if (Input.GetMouseButtonDown(0))
@@ -56,6 +61,12 @@ public class DungeonGrid : MonoBehaviour
         else if (Input.GetMouseButtonDown(1))
             index = (index == 2) ? 0 : 2;
 
+        grid.color = draw[index];
+        manager.CalculateGrids();
+    }
+    public void Clear()
+    {
+        index = 0;
         grid.color = draw[index];
         manager.CalculateGrids();
     }

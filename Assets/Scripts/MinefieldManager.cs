@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class MinefieldManager : MonoBehaviour
@@ -49,6 +50,10 @@ public class MinefieldManager : MonoBehaviour
                 faction[1].wrappers[i].Clear();
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha1))
+            fieldMask[0].SetActive(!fieldMask[0].activeSelf);
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+            fieldMask[1].SetActive(!fieldMask[1].activeSelf);
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             fieldMask[0].SetActive(!fieldMask[0].activeSelf);
@@ -56,8 +61,33 @@ public class MinefieldManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
             window.SetActive(!window.activeSelf);
-    }
 
+        if (Input.GetKeyDown(KeyCode.F9))
+            StartCoroutine(ReloadMap(1));
+        if (Input.GetKeyDown(KeyCode.F10))
+            StartCoroutine(ReloadMap(2));
+    }
+    IEnumerator ReloadMap(int index)
+    {
+        string url = Application.streamingAssetsPath + "/MinefieldMap_P" + index + ".txt";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+            if (string.IsNullOrEmpty(webRequest.error))
+            {
+                char[] contents = webRequest.downloadHandler.text.ToCharArray();
+                for (int i = 0; i < contents.Length; i++)
+                {
+                    //if(index==1)
+                        faction[index - 1].grids[i].Set(contents[i] - 48);
+                    //else
+                    //    faction[index - 1].grids[contents.Length-i-1].Set(contents[i] - 48);
+                }
+            }
+            else { }
+        }
+    }
     public void SetField(int index)
     {
         faction[index].state++;
