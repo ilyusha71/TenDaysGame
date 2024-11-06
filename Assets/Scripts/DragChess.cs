@@ -15,6 +15,9 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
     public bool alphaHit = false;
     public bool fixOrder = false;
     public bool clear = false;
+    [Header("General")]
+    public bool hasMark;
+    public GameObject mark;
 
     public Sprite[] backup;
     int spriteIndex;
@@ -32,6 +35,9 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
     public virtual void OnPointerDown(PointerEventData data)
     {
         EventSystem.current.SetSelectedGameObject(gameObject);
+
+        if (Input.GetMouseButtonDown(1) && hasMark)
+            mark.SetActive(!mark.activeSelf);
         if (Input.GetMouseButtonDown(1) && reversible)
         {
             transform.localScale = new Vector3(-1 * transform.localScale.x, transform.localScale.y, transform.localScale.z);

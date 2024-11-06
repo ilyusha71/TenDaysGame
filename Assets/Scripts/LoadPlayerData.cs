@@ -190,6 +190,9 @@ public class LoadPlayerData : MonoBehaviour
         StartCoroutine(minefieldAssault.ReloadRecords(input.text));
         StartCoroutine(wod.ReloadRecords(input.text));
         StartCoroutine(dungeonConquest.ReloadRecords(input.text));
+        StartCoroutine(ambushEnigma.ReloadRecords(input.text));
+        StartCoroutine(sdol.ReloadRecords(input.text));
+        StartCoroutine(throneRivalry.ReloadRecords(input.text));
         StartCoroutine(record.ReloadText(input.text));
 
     }
@@ -575,6 +578,12 @@ public class LoadPlayerData : MonoBehaviour
     public ReloadList wod;
     [Header("Dungeon Conquest")]
     public ReloadList dungeonConquest;
+    [Header("Ambush Enigma")]
+    public ReloadList ambushEnigma;
+    [Header("Sorcery Duel of Limits")]
+    public ReloadList sdol;
+    [Header("Throne Rivalry")]
+    public ReloadList throneRivalry;
     [Header("Record")]
     public ReloadList record;
 

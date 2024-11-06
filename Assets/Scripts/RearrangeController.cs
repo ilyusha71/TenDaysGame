@@ -8,6 +8,8 @@ public class RearrangeController : MonoBehaviour
     public Transform[] slots;
     public List<Vector3> lotteryPool = new List<Vector3>();
     public Vector3[] pos;
+    public bool shuffle=false;
+
     private void Awake()
     {
         pos = new Vector3[slots.Length];
@@ -24,7 +26,7 @@ public class RearrangeController : MonoBehaviour
             ReturnSlots();
         if (Input.GetKeyDown(KeyCode.R))
             RandomlyAllocate();
-        if (Input.GetKeyDown(KeyCode.F5))
+        if (Input.GetKeyDown(KeyCode.F5)&&shuffle)
             Shuffle(new Vector3(Screen.width*0.5f,Screen.height*0.5f,0));
     }
     void ReturnSlots()

@@ -8,6 +8,7 @@ public class DungeonManager : MonoBehaviour
     public Text[] score;
     public Text[] conquer;
     public Text unlocked;
+    public GameObject guard;
     private DungeonGrid[] grids;
     private int maxPlayer = 2;
 
@@ -46,6 +47,7 @@ public class DungeonManager : MonoBehaviour
         conquer[0].text = grassTerritory.ToString();
         conquer[1].text = soilTerritory.ToString();
         unlocked.text = countdown.ToString();
+        guard.SetActive((countdown>0)?true:false);
     }
     public void Clear()
     {

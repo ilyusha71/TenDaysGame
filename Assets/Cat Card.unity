@@ -855,6 +855,7 @@ MonoBehaviour:
   - {fileID: 2037517994}
   lotteryPool: []
   pos: []
+  shuffle: 0
 --- !u!1 &152833449
 GameObject:
   m_ObjectHideFlags: 0
@@ -3842,6 +3843,7 @@ MonoBehaviour:
   - {fileID: 1391084494}
   lotteryPool: []
   pos: []
+  shuffle: 0
 --- !u!224 &564799679 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1516655531060044238, guid: ed1bd4b13d0235a42905873b2bf5dfd3, type: 3}
@@ -9951,6 +9953,7 @@ MonoBehaviour:
   - {fileID: 1126548154}
   lotteryPool: []
   pos: []
+  shuffle: 0
 --- !u!114 &1347956287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9986,6 +9989,7 @@ MonoBehaviour:
   - {fileID: 786734132}
   lotteryPool: []
   pos: []
+  shuffle: 1
 --- !u!224 &1347956288
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12465,6 +12469,7 @@ MonoBehaviour:
   - {fileID: 228052780}
   lotteryPool: []
   pos: []
+  shuffle: 0
 --- !u!1 &1618813569
 GameObject:
   m_ObjectHideFlags: 0
