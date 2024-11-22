@@ -39,6 +39,12 @@ public class LoadPlayerAvatar : MonoBehaviour
             player[i].enabled = false;
         }
     }
+    public void ChangeAvatar(int index, Sprite sp) 
+    {
+        cat[index].gameObject.SetActive(false);
+        player[index].enabled = true;
+        player[index].sprite = sp;
+    }
     //public void Reload(int i)
     //{
     //    cat[i-1].gameObject.SetActive(false);

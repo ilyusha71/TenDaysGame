@@ -10,9 +10,12 @@ public class CardController : DragChess
     public GameObject face;
     public GameObject back;
     public GameObject front;
-    public bool random = false;
+    //public bool random = false;
     public Image imgFace;
     public Sprite[] cardSprites;
+
+    public bool playcard;
+    public Transform cardPool;
 
     public override void OnPointerDown(PointerEventData data)
     {
@@ -40,6 +43,8 @@ public class CardController : DragChess
         }
         if (Input.GetMouseButtonDown(1) && back)
             Flop();
+        if (Input.GetMouseButtonDown(1) && playcard)
+            transform.SetParent(cardPool, true);
         if (Input.GetKey(KeyCode.Delete) && !store)
             Destroy(gameObject);
 
@@ -56,5 +61,11 @@ public class CardController : DragChess
     {
         face.SetActive(false);
         back.SetActive(true);
+    }
+    public void PlayCard()
+    {
+        transform.SetParent(cardPool, true);
+        face.SetActive(true);
+        back.SetActive(false);
     }
 }

@@ -89,12 +89,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10e0eff13cbd65429a88fa07094faf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  store: 0
+  clonePool: {fileID: 0}
   copy: 1
   reversible: 0
   alphaHit: 0
   fixOrder: 0
-  main: {fileID: 0}
+  clear: 0
+  hasMark: 0
+  mark: {fileID: 0}
   backup: []
+  face: {fileID: 6478829893042554570}
+  back: {fileID: 0}
   front: {fileID: 0}
   random: 0
   imgFace: {fileID: 0}
@@ -111,7 +117,7 @@ GameObject:
   - component: {fileID: 5485309661153525452}
   - component: {fileID: 4105064540047504693}
   m_Layer: 5
-  m_Name: Frame
+  m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

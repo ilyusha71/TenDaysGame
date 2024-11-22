@@ -12,7 +12,9 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
     [Header("General")]
     public bool copy = true;
     public bool reversible = false;
-    public bool alphaHit = false;
+    public bool hasAlphaHit = false;
+    public float alphaHitThreshold = 0.3f;
+    public bool hasFullAlphaHit = false;
     public bool fixOrder = false;
     public bool clear = false;
     [Header("General")]
@@ -26,10 +28,12 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
     void Start()
     {
         pos = transform.position;
-        if (!alphaHit)
-            GetComponent<Image>().alphaHitTestMinimumThreshold = 0.3f;
-        else
-            SetAlphaHit();
+        if (hasAlphaHit)
+            GetComponent<Image>().alphaHitTestMinimumThreshold = alphaHitThreshold;
+        //if (!hasFullAlphaHit)
+        //    GetComponent<Image>().alphaHitTestMinimumThreshold = 0.3f;
+        //else
+        //    SetAlphaHit();
     }
 
     public virtual void OnPointerDown(PointerEventData data)

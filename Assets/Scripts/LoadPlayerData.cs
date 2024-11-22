@@ -17,7 +17,7 @@ public class LoadPlayerData : MonoBehaviour
         //public Sprite avatar;
         //public string name;        
     }
-    Dictionary<string,Cat> playerList = new Dictionary<string, Cat>();
+    Dictionary<string, Cat> playerList = new Dictionary<string, Cat>();
     //string[] playerList;
     [Header("Cat")]
     public GameObject cat;
@@ -25,13 +25,18 @@ public class LoadPlayerData : MonoBehaviour
     public InputField input;
     public GameObject[] pages;
     int index;
-    public Text info;
+    [Header("Info")]
     public Text catbell;
     public Text casino;
     public Text judgement;
+    public Text txtFaction;
+    public Text txtPlayer;
+    public Text txtBirthday;
+    public Text info;
     public Text prestige;
     public Text championship;
     public Text pets;
+    public Text carriers;
     [Header("Item Panel")]
     public GameObject itemPanel;
     public Text[] items;
@@ -57,8 +62,8 @@ public class LoadPlayerData : MonoBehaviour
 
     private void Awake()
     {
-        items = itemPanel.GetComponentsInChildren<Text>();
-        skills = skillPanel.GetComponentsInChildren<Text>();
+        //items = itemPanel.GetComponentsInChildren<Text>();
+        //skills = skillPanel.GetComponentsInChildren<Text>();
         npc = npcPanel.GetComponentsInChildren<Text>();
         tasting = tastingPanel.GetComponentsInChildren<Text>();
         equipment.Initialize();
@@ -66,15 +71,25 @@ public class LoadPlayerData : MonoBehaviour
         consumable.Initialize();
         missionItem.Initialize();
         book.Initialize();
+
+        talent.Initialize();
         life.Initialize();
-        adventure.Initialize();
-        combat.Initialize();
         knowledge.Initialize();
+        spell.Initialize();
+
+        adventure.Initialize();
+        skill.Initialize();
+        shooting.Initialize();
+        magic.Initialize();
+        licence.Initialize();
+
+        //combat.Initialize();
+     
     }
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.PageDown))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.PageDown))
         {
             for (int i = 0; i < pages.Length; i++)
             {
@@ -84,7 +99,7 @@ public class LoadPlayerData : MonoBehaviour
             index = (int)Mathf.Repeat(index, pages.Length);
             pages[index].SetActive(true);
         }
-        else if (Input.GetKeyDown(KeyCode.PageUp))
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.PageUp))
         {
             for (int i = 0; i < pages.Length; i++)
             {
@@ -148,53 +163,22 @@ public class LoadPlayerData : MonoBehaviour
             index = 4;
             pages[index].SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.F12))
+        else if (Input.GetKeyDown(KeyCode.F5))
         {
-            StartCoroutine(ReloadPlayerList());
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 5;
+            pages[index].SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.F12))
+            StartCoroutine(ReloadPlayerList());
     }
-    public void ReloadPlayer()
+    public void LoadPlayerList()
     {
-        StartCoroutine(ReloadAvatar());
-        StartCoroutine(ReloadInfo(input.text));
-        StartCoroutine(ReloadPrestige(input.text));
-        StartCoroutine(ReloadSkills(input.text));
-        StartCoroutine(ReloadItems(input.text));
-        //StartCoroutine(ReloadChampionship(input.text));
-
-        // Page 2
-        StartCoroutine(equipment.ReloadLists(input.text));
-        StartCoroutine(bag.ReloadLists(input.text));
-        StartCoroutine(consumable.ReloadLists(input.text));
-        StartCoroutine(missionItem.ReloadLists(input.text));
-        StartCoroutine(book.ReloadLists(input.text));
-
-        // Page 3
-        StartCoroutine(life.ReloadLists(input.text));
-        StartCoroutine(adventure.ReloadLists(input.text));
-        StartCoroutine(combat.ReloadLists(input.text));
-        StartCoroutine(knowledge.ReloadLists(input.text));
-
-        // Page 3
-        //StartCoroutine(ReloadStageClash(input.text));
-
-        StartCoroutine(ReloadNPC(input.text));
-        StartCoroutine(ReloadTasting(input.text));
-        StartCoroutine(ReloadPets(input.text));
-        // Page 4
-     
-
-
-        StartCoroutine(stageClash.ReloadRecords(input.text));
-        StartCoroutine(royalTradeWar.ReloadRecords(input.text));
-        StartCoroutine(minefieldAssault.ReloadRecords(input.text));
-        StartCoroutine(wod.ReloadRecords(input.text));
-        StartCoroutine(dungeonConquest.ReloadRecords(input.text));
-        StartCoroutine(ambushEnigma.ReloadRecords(input.text));
-        StartCoroutine(sdol.ReloadRecords(input.text));
-        StartCoroutine(throneRivalry.ReloadRecords(input.text));
-        StartCoroutine(record.ReloadText(input.text));
-
+        StartCoroutine(ReloadPlayerList());
     }
     IEnumerator ReloadPlayerList()
     {
@@ -206,22 +190,22 @@ public class LoadPlayerData : MonoBehaviour
             if (string.IsNullOrEmpty(webRequest.error))
             {
                 string[] contents = webRequest.downloadHandler.text.Split("\r\n");
-                
+
                 for (int i = 0; i < contents.Length; i++)
                 {
-                    string nickname = contents[i].Substring(1);
+                    string nickname = contents[i].Split("\t")[0];
                     GameObject tab;
                     Cat cat;
                     if (playerList.ContainsKey(nickname))
                         cat = playerList[nickname];
                     else
-                    {                      
+                    {
                         tab = Instantiate(playerTab);
                         tab.transform.SetParent(playerListPanel);
                         tab.transform.SetSiblingIndex(i);
                         cat = new Cat();
                         cat.name = tab.GetComponentInChildren<Text>();
-                        cat.name.text = contents[i].Substring(1);
+                        cat.name.text = nickname;
                         cat.avatar = tab.GetComponentsInChildren<Image>()[1];
 
                         Button btn = tab.GetComponentInChildren<Button>();
@@ -230,15 +214,66 @@ public class LoadPlayerData : MonoBehaviour
                             input.text = cat.name.text;
                             ReloadPlayer();
                         });
-                        playerList.Add(contents[i].Substring(1), cat);
+                        playerList.Add(nickname, cat);
                         StartCoroutine(ReloadCat(cat));
-                    }                  
+                    }
                 }
-                playerListPanel.GetComponent<RectTransform>().sizeDelta = new Vector2(0,273+275.5f*(int)((contents.Length-1)/7));
+                playerListPanel.GetComponent<RectTransform>().sizeDelta = new Vector2(0, 273 + 275.5f * (int)((contents.Length - 1) / 7));
             }
             else { }
         }
     }
+    public void ReloadPlayer()
+    {
+        StartCoroutine(ReloadAvatar());
+        StartCoroutine(ReloadInfo(input.text));
+        StartCoroutine(ReloadPrestige(input.text));
+        StartCoroutine(ReloadNPC(input.text));
+        StartCoroutine(ReloadTasting(input.text));
+        StartCoroutine(ReloadPets(input.text));
+        StartCoroutine(ReloadCarriers(input.text));
+        //StartCoroutine(ReloadSkills(input.text));
+        //StartCoroutine(ReloadItems(input.text));
+        //StartCoroutine(ReloadChampionship(input.text));
+
+        // Page 2
+        StartCoroutine(equipment.ReloadLists(input.text));
+        StartCoroutine(bag.ReloadLists(input.text));
+        StartCoroutine(consumable.ReloadLists(input.text));
+        StartCoroutine(missionItem.ReloadLists(input.text));
+        StartCoroutine(book.ReloadLists(input.text));
+
+        // Page 3
+        StartCoroutine(talent.ReloadLists(input.text));
+        StartCoroutine(life.ReloadLists(input.text));
+          StartCoroutine(knowledge.ReloadLists(input.text));
+        StartCoroutine(spell.ReloadLists(input.text));
+        //StartCoroutine(combat.ReloadLists(input.text));
+
+        // Page 5
+        StartCoroutine(adventure.ReloadLists(input.text));
+        StartCoroutine(skill.ReloadLists(input.text));
+        StartCoroutine(shooting.ReloadLists(input.text));
+        StartCoroutine(magic.ReloadLists(input.text));
+        StartCoroutine(licence.ReloadLists(input.text));
+        
+        StartCoroutine(record.ReloadText(input.text));
+    }
+    void UpdateRank(string playerName) 
+    {
+        StartCoroutine(stageClash.ReloadRank(playerName)); //驿站风云
+        StartCoroutine(royalTradeWar.ReloadRank(playerName)); //皇家商贸战
+        StartCoroutine(minefieldAssault.ReloadRank(playerName)); //雷区突击
+        StartCoroutine(wod.ReloadRank(playerName)); //绝望梦境
+        StartCoroutine(dungeonConquest.ReloadRank(playerName)); //地城争夺
+        StartCoroutine(ambushEnigma.ReloadRank(playerName)); //伏击迷局
+        StartCoroutine(liarsBar.ReloadRank(playerName)); //老猫酒馆
+        StartCoroutine(catBingo.ReloadRank(playerName)); //猫猫宾果
+        StartCoroutine(sdol.ReloadRank(playerName)); //极限斗法
+        StartCoroutine(throneRivalry.ReloadRank(playerName)); //王权纷争
+        StartCoroutine(bicolorRacing.ReloadRank(playerName)); //双色斗猫
+    }
+       
     IEnumerator ReloadCat(Cat cat)
     {
         string url = Application.streamingAssetsPath + "/" + cat.name.text + ".png";
@@ -296,6 +331,12 @@ public class LoadPlayerData : MonoBehaviour
     }
     IEnumerator ReloadInfo(string nick)
     {
+        catbell.text = "";
+        casino.text = "";
+        judgement.text = "";
+        txtFaction.text = "";
+        txtPlayer.text = "";
+        txtBirthday.text = "";
         string url = Application.streamingAssetsPath + "/" + nick + ".txt";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
@@ -303,25 +344,45 @@ public class LoadPlayerData : MonoBehaviour
             yield return webRequest.SendWebRequest();
             if (string.IsNullOrEmpty(webRequest.error))
             {
-                string[] contents = webRequest.downloadHandler.text.Split("|");
-                //string combine = "";
-                //for (int i = 0; i < contents.Length; i++)
-                //{
-                //    combine += contents[i];
-                //}
-                info.text = contents[0] + contents[1] + contents[8];
-                catbell.text = contents[3];
-                casino.text = contents[5];
-                judgement.text = contents[7];
-                //Debug.Log(webRequest.downloadHandler.text);
+                string[] contents = webRequest.downloadHandler.text.Split("\r\n");
+                info.text = webRequest.downloadHandler.text.Split("\r\n")[5];
+                StartCoroutine(ReloadMain(nick));
+                UpdateRank(webRequest.downloadHandler.text.Split("|")[1]);
             }
             else
             {
                 info.text = "无记录";
-                catbell.text = "";
-                casino.text = "";
-                judgement.text = "";
+                UpdateRank(nick);
             }
+        }
+    }
+    public IEnumerator ReloadMain(string playerName)
+    {
+        //yield return new WaitForSecondsRealtime(0.1f);
+        string url = Application.streamingAssetsPath + "/PlayerList.txt";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+            if (string.IsNullOrEmpty(webRequest.error))
+            {
+                string[] contents = webRequest.downloadHandler.text.Split("\r\n");
+                for (int order = 0; order < contents.Length; order++)
+                {
+                    if (contents[order].Contains(playerName))
+                    {
+                        string[] data = contents[order].Split("\t");
+                        catbell.text = data[3];
+                        int vip = int.Parse(data[5]);
+                        casino.text = data[4] + (vip > 0 ? ("(VIP" + data[5] + ")") : "");
+                        judgement.text = data[6];
+                        txtFaction.text = data[2];
+                        txtPlayer.text = data[1];
+                        txtBirthday.text = data[7];
+                    }
+                }
+            }
+            //else { for (int i = 0; i < list.Length; i++) { list[i].text = ""; } }
         }
     }
     IEnumerator ReloadPrestige(string nick)
@@ -544,6 +605,24 @@ public class LoadPlayerData : MonoBehaviour
             }
         }
     }
+    IEnumerator ReloadCarriers(string nick)
+    {
+        string url = Application.streamingAssetsPath + "/" + nick + "_载具.txt";
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+            if (string.IsNullOrEmpty(webRequest.error))
+            {
+                carriers.text = webRequest.downloadHandler.text;
+                //Debug.Log(webRequest.downloadHandler.text);
+            }
+            else
+            {
+                carriers.text = "";
+            }
+        }
+    }
 
     [Header("Page 2 Equipment")]
     public ReloadList equipment;
@@ -556,43 +635,63 @@ public class LoadPlayerData : MonoBehaviour
     [Header("Page 2 Book")]
     public ReloadList book;
 
+    [Header("Page 3 Talent")]
+    public ReloadList talent;
     [Header("Page 3 Life")]
     public ReloadList life;
-    [Header("Page 3 Adventure")]
-    public ReloadList adventure;
-    [Header("Page 3 Combat")]
-    public ReloadList combat;
     [Header("Page 3 Knowledge")]
     public ReloadList knowledge;
+    [Header("Page 3 Spell")]
+    public ReloadList spell;
+    [Header("Page 3 Combat")]
+    public ReloadList combat;
+
+
+    [Header("Page 5 Adventure")]
+    public ReloadList adventure;
+    [Header("Page 5 Skill")]
+    public ReloadList skill;
+    [Header("Page 5 Shooting")]
+    public ReloadList shooting;
+    [Header("Page 5 Magic")]
+    public ReloadList magic;
+    [Header("Page 5 License")]
+    public ReloadList licence;
 
 
 
-    [Header("Stage Clash")]
-    public Text[] scRecords;
+    [Header("<color=green>驿站风云 Stage Clash")] //驿站风云
     public ReloadList stageClash;
-    [Header("Royal Trade War")]
+    [Header("<color=green>皇家商贸战 Royal Trade War</color>")] //皇家商贸战
     public ReloadList royalTradeWar;
-    [Header("Minefield Assault")]
+    [Header("<color=green>雷区突击 Minefield Assault</color>")] //雷区突击
     public ReloadList minefieldAssault;
-    [Header("The Wonderland of Desperation")]
+    [Header("<color=green>绝望梦境 The Wonderland of Desperation</color>")] //绝望梦境
     public ReloadList wod;
-    [Header("Dungeon Conquest")]
+    [Header("<color=green>地城争夺 Dungeon Conquest</color>")] //地城争夺
     public ReloadList dungeonConquest;
-    [Header("Ambush Enigma")]
+    [Header("<color=green>伏击迷局 Ambush Enigma</color>")] //伏击迷局
     public ReloadList ambushEnigma;
-    [Header("Sorcery Duel of Limits")]
+    [Header("<color=green>老猫酒馆 Liar's Bar</color>")] //老猫酒馆
+    public ReloadList liarsBar;
+    [Header("<color=green>猫猫宾果 Cat Bingo</color>")] //猫猫宾果
+    public ReloadList catBingo;
+    [Header("<color=green>极限斗法 Sorcery Duel of Limits</color>")] //极限斗法
     public ReloadList sdol;
-    [Header("Throne Rivalry")]
+    [Header("<color=green>王权纷争 Throne Rivalry</color>")] //王权纷争
     public ReloadList throneRivalry;
+    [Header("<color=green>双色斗猫 Bicolor Racing</color>")] //双色斗猫
+    public ReloadList bicolorRacing;
     [Header("Record")]
     public ReloadList record;
+
 
     [Serializable]
     public class ReloadList
     {
-        public GameObject panel;
-        public Text[] list;
         public string title;
+        public GameObject panel;
+        public Text[] list;       
         public void Initialize()
         {
             list = panel.GetComponentsInChildren<Text>();
@@ -650,6 +749,32 @@ public class LoadPlayerData : MonoBehaviour
                     }
                 }
                 else { for (int i = 0; i < list.Length; i++) { list[i].text = ""; } }
+            }
+        }       
+        public IEnumerator ReloadRank(string playerName)
+        {
+            for (int i = 0; i < list.Length; i++) { list[i].text = ""; }
+            //yield return new WaitForSecondsRealtime(0.1f);
+            string url = Application.streamingAssetsPath + "/Game_" + title + ".txt";
+            using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
+            {
+                // Request and wait for the desired page.
+                yield return webRequest.SendWebRequest();
+                if (string.IsNullOrEmpty(webRequest.error))
+                {
+                    string[] contents = webRequest.downloadHandler.text.Split("\r\n");
+                    for (int data = 0; data < contents.Length; data++)
+                    {
+                        string[] records = contents[data].Split("\t");
+                        if (records[0]==playerName)
+                        {                            
+                            for (int i = 0; i < list.Length; i++)
+                            {
+                                list[i].text = records[i + 2];
+                            }
+                        }
+                    }
+                }
             }
         }
     }

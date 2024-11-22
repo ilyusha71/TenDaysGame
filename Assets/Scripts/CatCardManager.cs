@@ -7,10 +7,11 @@ public class CatCardManager : MonoBehaviour
 {
     public GameObject[] games;
 
-    [Header("The King and the Slave: Blind")]
+    [Header("Throne Rivalry")]
     public Vector3[] slots;
     public CardController[] random10;
-
+    [Header("Bicolor Racing")]
+    public CardController[] bicolorDeck;
 
     public GameObject deck;
     public GameObject shuffle;
@@ -65,6 +66,10 @@ public class CatCardManager : MonoBehaviour
             for (int i = 0; i < random10.Length; i++)
             {
                 random10[i].Flop();
+            }
+            for (int i = 0; i < bicolorDeck.Length; i++)
+            {
+                bicolorDeck[i].Flop();
             }
         }
         if (Input.GetKeyDown(KeyCode.V))

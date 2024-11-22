@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: e798720519705234fa79e0ee9630ed03
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 849.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfcef97cebbea9446bead176d2703cb3
+      internalID: 295064196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_1
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 849.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12fd770c934ac24e8976d7f7216bab5
+      internalID: 801770948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac6eccac5efc524fb89dd87e272f49b
+      internalID: 240382898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 728.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a0bb6c67ebf984fbbc2c983c98073a
+      internalID: -1982258050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d17e46899b3bb445a31ff5f980c09fa
+      internalID: -1899288935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 607.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87e9000cabfdfe48a80eb48defb00d8
+      internalID: 1596471445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2948c33cdb54cfc44bd9cde392e4a307
+      internalID: 1369657594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 486.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b8c84e3367a644c9bb12affc821115
+      internalID: -376506144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c52da64ca8b6444c9842c40ca019ea2
+      internalID: 1997595842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_9
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 365.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946f29f5044c74c46a38bfe79a41aa4e
+      internalID: -709518142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 365.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1307c5e65792a90478a279cb761f8c2a
+      internalID: 1957755716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ca8121432650f4fb2171bbdf4551c6
+      internalID: -1850433703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_12
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 244.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28f930fe79337e40886fc8b24d22d1a
+      internalID: -1670873241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_13
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 244.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f78f1c98ac46843bec5b1576cea8aa
+      internalID: -1121796930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 123.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e81466551623c74bb8d2d6ecae2a054
+      internalID: -1376610600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_15
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 123.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fbacf83761ec045bfd2a7535bc1bae
+      internalID: 397884341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_16
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 123.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a024e499daf18c419571b4949cc5f02
+      internalID: -162915320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6849aabdb9590445b728c13fc834110
+      internalID: 1077657569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_18
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 2.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb63b9375b35a0043ac3ea32f38d77af
+      internalID: 1687386194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atlas_UICommon_Medal_19
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2.625
+        width: 122
+        height: 121.375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f2a26073b51b64aa107d0e12fbf4b9
+      internalID: 85491362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Atlas_UICommon_Medal_0: 295064196
+      Atlas_UICommon_Medal_1: 801770948
+      Atlas_UICommon_Medal_10: 1957755716
+      Atlas_UICommon_Medal_11: -1850433703
+      Atlas_UICommon_Medal_12: -1670873241
+      Atlas_UICommon_Medal_13: -1121796930
+      Atlas_UICommon_Medal_14: -1376610600
+      Atlas_UICommon_Medal_15: 397884341
+      Atlas_UICommon_Medal_16: -162915320
+      Atlas_UICommon_Medal_17: 1077657569
+      Atlas_UICommon_Medal_18: 1687386194
+      Atlas_UICommon_Medal_19: 85491362
+      Atlas_UICommon_Medal_2: 240382898
+      Atlas_UICommon_Medal_3: -1982258050
+      Atlas_UICommon_Medal_4: -1899288935
+      Atlas_UICommon_Medal_5: 1596471445
+      Atlas_UICommon_Medal_6: 1369657594
+      Atlas_UICommon_Medal_7: -376506144
+      Atlas_UICommon_Medal_8: 1997595842
+      Atlas_UICommon_Medal_9: -709518142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -45,7 +45,7 @@ EditorBuildSettings:
     path: Assets/Manor Duel.unity
     guid: 75bc6600e243df24ba3f5b46b1a03033
   - enabled: 1
-    path: Assets/Enigma 28.unity
+    path: Assets/Obsolete/Enigma 28.unity
     guid: 7942bf4cdb2aad041a4d7484476b1d31
   - enabled: 1
     path: Assets/Freaky Lab 1.unity
@@ -72,7 +72,7 @@ EditorBuildSettings:
     path: Assets/Sorcery Duel of Limits.unity
     guid: 2e7f3877b5ce20447ac76d182f44ad58
   - enabled: 1
-    path: Assets/Cat Leaping Gorge.unity
+    path: Assets/Obsolete/Cat Leaping Gorge.unity
     guid: aa9e627fa9a016542a1d56e4bc979ce7
   - enabled: 1
     path: Assets/PlayerPanel.unity
@@ -80,4 +80,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Royal Trade War.unity
     guid: bb3af296a65747144a9745f5721118f9
+  - enabled: 1
+    path: "Assets/Liar\u2019s Bar.unity"
+    guid: 4c193bff20c69a74faeb02ac1bad6fa2
+  - enabled: 1
+    path: Assets/Stage Clash.unity
+    guid: 4a9102c735adeb04d9f06b7f4db7ca3a
   m_configObjects: {}

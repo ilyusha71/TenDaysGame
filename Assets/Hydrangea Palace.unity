@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (17)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -298,8 +298,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -329,7 +329,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (5)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -571,8 +571,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -650,8 +650,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -881,8 +881,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -988,7 +988,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (24)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -1106,7 +1106,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (13)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -1272,8 +1272,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1303,7 +1303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (3)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -1421,7 +1421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (18)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -1662,8 +1662,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1774,7 +1774,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (32)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -1892,7 +1892,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (27)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -2010,7 +2010,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (29)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -2176,8 +2176,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2331,8 +2331,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2438,7 +2438,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (11)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -2604,8 +2604,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2683,8 +2683,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2714,7 +2714,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (30)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -2880,8 +2880,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2911,7 +2911,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (12)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -3305,8 +3305,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -3384,8 +3384,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -3567,7 +3567,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (23)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -3780,7 +3780,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (34)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -4050,7 +4050,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -4159,7 +4159,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (22)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -4277,7 +4277,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (45)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -4395,7 +4395,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (39)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -4561,8 +4561,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4640,8 +4640,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4719,8 +4719,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4798,8 +4798,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4877,8 +4877,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4956,8 +4956,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -5010,7 +5010,6 @@ RectTransform:
   - {fileID: 92658398}
   - {fileID: 1420155831}
   - {fileID: 34259122}
-  - {fileID: 1361083726}
   - {fileID: 1541489174}
   - {fileID: 342376997}
   - {fileID: 411663895}
@@ -5037,7 +5036,6 @@ RectTransform:
   - {fileID: 1330279399}
   - {fileID: 757875011}
   - {fileID: 1093806516}
-  - {fileID: 1084656936}
   - {fileID: 731456435}
   - {fileID: 1839213142}
   - {fileID: 1117282730}
@@ -5095,6 +5093,7 @@ MonoBehaviour:
   - {fileID: 1117282730}
   lotteryPool: []
   pos: []
+  shuffle: 0
 --- !u!1001 &947794346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5105,7 +5104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (33)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -5299,7 +5298,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (37)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -5493,7 +5492,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (21)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -5611,7 +5610,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (26)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -5795,128 +5794,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058767875}
   m_CullTransparentMesh: 1
---- !u!1001 &1084656935
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 930250251}
-    m_Modifications:
-    - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Name
-      value: Chess (41)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.b
-      value: 0.45490196
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.r
-      value: 0.75686276
-      objectReference: {fileID: 0}
-    - target: {fileID: 8960500619711512692, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: copy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 71
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -356.38184
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
---- !u!224 &1084656936 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-  m_PrefabInstance: {fileID: 1084656935}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1093806515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5927,7 +5804,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (40)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -6045,7 +5922,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (47)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -6211,8 +6088,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -6432,7 +6309,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (28)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -6674,8 +6551,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -6829,8 +6706,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7067,8 +6944,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7098,7 +6975,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (38)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -7358,128 +7235,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341204204}
   m_CullTransparentMesh: 1
---- !u!1001 &1361083725
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 930250251}
-    m_Modifications:
-    - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Name
-      value: Chess (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.b
-      value: 0.45490196
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.r
-      value: 0.75686276
-      objectReference: {fileID: 0}
-    - target: {fileID: 8960500619711512692, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: copy
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 71
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 401.63666
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
---- !u!224 &1361083726 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-  m_PrefabInstance: {fileID: 1361083725}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1388062029
 GameObject:
   m_ObjectHideFlags: 0
@@ -7566,7 +7321,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (4)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -7732,8 +7487,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7811,8 +7566,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7890,8 +7645,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7969,8 +7724,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -8124,8 +7879,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -8233,7 +7988,7 @@ GameObject:
   - component: {fileID: 1507929148}
   - component: {fileID: 1507929147}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Text (Title)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8253,10 +8008,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1618813570}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 271, y: 163}
+  m_SizeDelta: {x: -98, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1507929147
 MonoBehaviour:
@@ -8271,7 +8026,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1509434, g: 0.026163522, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.07, b: 0.008686681, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8279,12 +8034,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 55
+    m_Font: {fileID: 12800000, guid: 328cf971c2a83f14b802f241bd7492ed, type: 3}
+    m_FontSize: 63
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
-    m_MaxSize: 55
+    m_MaxSize: 67
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -8614,7 +8369,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (10)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -8780,8 +8535,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -9115,7 +8870,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (15)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -9431,8 +9186,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -9462,7 +9217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (35)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -9628,8 +9383,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -9659,7 +9414,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (46)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -9906,8 +9661,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -10061,8 +9816,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -10216,8 +9971,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -10371,8 +10126,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: e65b76d00ca2f134692aa8d069d99f7c, type: 3}
-    m_FontSize: 27
+    m_Font: {fileID: 12800000, guid: 42f49ddccdf59fc49ae1a2551323f3c6, type: 3}
+    m_FontSize: 33
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -10402,7 +10157,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (16)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -10520,7 +10275,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Name
-      value: Chess (20)
+      value: Chess Green
       objectReference: {fileID: 0}
     - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
       propertyPath: m_Color.b
@@ -10636,6 +10391,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1311237576}
     m_Modifications:
+    - target: {fileID: 392674726048470615, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Text
+      value: "\u5065\u5FD8\u732B"
+      objectReference: {fileID: 0}
     - target: {fileID: 1482821815465793832, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Color.b
       value: 0.48509997
@@ -10648,12 +10407,56 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.77
       objectReference: {fileID: 0}
+    - target: {fileID: 2680948426513743689, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6989829fe17e86144b099e7de906a679, type: 3}
+    - target: {fileID: 3698568983535207776, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 3867801249370979652, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Name
       value: Avatar Controller
       objectReference: {fileID: 0}
     - target: {fileID: 3867801249370979652, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4041975329243818225, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.b
+      value: 0.10690197
+      objectReference: {fileID: 0}
+    - target: {fileID: 4041975329243818225, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.g
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 4041975329243818225, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.r
+      value: 0.22467846
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791285041263862110, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Text
+      value: "\u8C03\u67E5\u732B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159467163288870904, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.b
+      value: 0.10690197
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159467163288870904, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.g
+      value: 0.36862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 7159467163288870904, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Color.r
+      value: 0.22467846
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502863609097400937, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 7502863609097400937, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8351540236058992488, guid: 46877b15c01820241816da9163262b66, type: 3}
@@ -10748,15 +10551,16 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.77
       objectReference: {fileID: 0}
+    - target: {fileID: 9113269373097609280, guid: 46877b15c01820241816da9163262b66, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7ae7361d48e20a844bf4e0a209f39d21, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2875516452911435921, guid: 46877b15c01820241816da9163262b66, type: 3}
       insertIndex: 6
       addedObject: {fileID: 5911812885104144740}
-    - targetCorrespondingSourceObject: {fileID: 3698568983535207776, guid: 46877b15c01820241816da9163262b66, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5367382277068225545}
     - targetCorrespondingSourceObject: {fileID: 8983432953401157528, guid: 46877b15c01820241816da9163262b66, type: 3}
       insertIndex: 6
       addedObject: {fileID: 1161720745}
@@ -10768,11 +10572,6 @@ PrefabInstance:
 --- !u!224 &1644367953910090030 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7502863609097400937, guid: 46877b15c01820241816da9163262b66, type: 3}
-  m_PrefabInstance: {fileID: 1644367953910090029}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1644367953910090031 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3698568983535207776, guid: 46877b15c01820241816da9163262b66, type: 3}
   m_PrefabInstance: {fileID: 1644367953910090029}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1644367953910090032 stripped
@@ -10902,120 +10701,6 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
   m_PrefabInstance: {fileID: 1669232468405503856}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &5367382277068225544
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1644367953910090031}
-    m_Modifications:
-    - target: {fileID: 4039467611863653427, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Name
-      value: Chess Cat
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.b
-      value: 0.32156864
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.g
-      value: 0.31764707
-      objectReference: {fileID: 0}
-    - target: {fileID: 6473468764371338661, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Color.r
-      value: 0.32156864
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 71
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9781476
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.20791169
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -27
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -77
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 24
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
---- !u!224 &5367382277068225545 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 9190435442465002560, guid: 04555b9377b2cc244bc44cd5143a879f, type: 3}
-  m_PrefabInstance: {fileID: 5367382277068225544}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5911812885104144739
 PrefabInstance:

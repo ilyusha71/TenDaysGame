@@ -332,6 +332,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6f373d2fa5788a14c984f9790f5cee12, type: 3}
+    - target: {fileID: 3115073753114322496, guid: 604f575c6fa277a46a01b2da7c418696, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4291493883676057228, guid: 604f575c6fa277a46a01b2da7c418696, type: 3}
       propertyPath: m_Text
       value: "\u767D\u732B"

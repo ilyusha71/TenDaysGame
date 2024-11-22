@@ -6,7 +6,7 @@ using UnityEngine;
 public class RearrangeController : MonoBehaviour
 {
     public Transform[] slots;
-    public List<Vector3> lotteryPool = new List<Vector3>();
+    public List<int> lotteryPool = new List<int>();
     public Vector3[] pos;
     public bool shuffle=false;
 
@@ -16,7 +16,7 @@ public class RearrangeController : MonoBehaviour
         for (int i = 0; i < slots.Length; i++)
         {
             pos[i] = slots[i].position;
-            lotteryPool.Add(pos[i]);
+            lotteryPool.Add(i);
         }
     }
     // Update is called once per frame
@@ -38,11 +38,12 @@ public class RearrangeController : MonoBehaviour
     }
     public void RandomlyAllocate()
     {
-        List<Vector3> rand = lotteryPool.ToList();
+        List<int> rand = lotteryPool.ToList();
         for (int i = 0; i < slots.Length; i++)
         {
             int index = Random.Range(0, rand.Count);
-            slots[i].position = rand[index];
+            slots[i].position = pos[rand[index]];
+            slots[i].SetSiblingIndex(rand[index]);
             rand.Remove(rand[index]);
         }
     }
