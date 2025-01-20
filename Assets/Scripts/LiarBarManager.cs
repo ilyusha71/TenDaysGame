@@ -5,22 +5,25 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class LiarBarManager : MonoBehaviour
+public class LiarBarManager : MultiplayerGameManager
 {
     public Transform[] decks;
     bool[] check;
-    public Transform[] expand;
+
     public Transform[] cards;
     public Transform[] sequence;
     public List<int> lotteryPool = new List<int>();
     public Image imgSponsor;
     public Text nameSponsor;
     public Sprite[] spSponsors;
-    public LoadPlayerAvatar lpa;
     public Sprite rip;
     public GameObject greatDemon;
-    public RandomDice[] dice;
-       // Start is called before the first frame update
+    public override void LoadPlayer()
+    {
+        base.LoadPlayer();
+        PeanutsManager.Instance.dealerName.text = "庄";
+    }
+    // Start is called before the first frame update
     void Start()
     {
         check = new bool[decks.Length];
@@ -30,15 +33,12 @@ public class LiarBarManager : MonoBehaviour
             lotteryPool.Add(i);
         }
         RandomlyAllocate();
-        ThrowDice();
     }
     // Update is called once per frame
-    void Update()
+ void Update()
     {
         if (Input.GetKeyDown(KeyCode.R))
             RandomlyAllocate();
-        if (Input.GetKeyDown(KeyCode.D))
-            ThrowDice();
         if (Input.GetKeyDown(KeyCode.F1))
             Expande(0);
         if (Input.GetKeyDown(KeyCode.F2))
@@ -67,11 +67,7 @@ public class LiarBarManager : MonoBehaviour
     }
     public void Shoot(int index)
     {
-        lpa.ChangeAvatar(index, rip);
-    }
-    public void ThrowDice()
-    {
-        for (int i = 0; i < dice.Length; i++) { dice[i].Throw(); }
+        LoadPlayerAvatar.Instance.ChangeAvatar(index, rip);
     }
     public void RandomlyAllocate()
     {
@@ -100,41 +96,35 @@ public class LiarBarManager : MonoBehaviour
        imgSponsor.sprite=spSponsors[order];
         switch (order)
         {
-            case 0:
-                nameSponsor.text = "烤猪";
-                break;
-            case 1:
-                nameSponsor.text = "柠檬";
-                break;
-            case 2:
-                nameSponsor.text = "贪吃芙";
-                break;
+            case 0: nameSponsor.text = "烤猪"; break;
+            case 1: nameSponsor.text = "柠檬"; break;
+            case 2: nameSponsor.text = "贪吃芙"; break;
+            case 3: nameSponsor.text = "染柒"; break;
         }
-        for (int i = 0; i < check.Length; i++)
-        {
-            check[i] = false;
-        }
+        for (int i = 0; i < check.Length; i++) { check[i] = true; }
     }
-    public void Expande(int index)
+    public override void Expande(int index)
     {
-        int order = 0;
-        CardController[] cards = decks[index].GetComponentsInChildren<CardController>();
-
-        for (int i = 0; i < cards.Length; i++)
+        for (int hand = 0; hand < decks.Length; hand++)
         {
-            if (!check[index])
+            check[hand] = hand==index?!check[hand]: true;
+            int order = 0;
+            CardController[] cards = decks[hand].GetComponentsInChildren<CardController>();            
+            for (int i = 0; i < cards.Length; i++)
             {
-                if (order < 5)
-                    cards[i].transform.position = expand[order].position;
-                cards[i].Flop();
+                if (!check[hand])
+                {
+                    if (order < 5)
+                        cards[i].transform.position = expand[order].position;
+                    cards[i].Flop();
+                }
+                else
+                {
+                    cards[i].transform.localPosition = Vector3.zero;
+                    cards[i].Fold();
+                }
+                order++;
             }
-            else
-            {
-                cards[i].transform.localPosition = Vector3.zero;
-                cards[i].Fold();
-            }               
-            order++;
         }
-        check[index] = !check[index];
     }   
 }

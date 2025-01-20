@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -20,72 +19,24 @@ public class LoadPlayerData : MonoBehaviour
     Dictionary<string, Cat> playerList = new Dictionary<string, Cat>();
     //string[] playerList;
     [Header("Cat")]
-    public GameObject cat;
     public Image player;
     public InputField input;
+    [Header("Page")]
     public GameObject[] pages;
     int index;
+    [Header("List")]
+    public ListLoader[] listLoader;
     [Header("Info")]
     public Text catbell;
     public Text casino;
     public Text judgement;
-    public Text txtFaction;
-    public Text txtPlayer;
-    public Text txtBirthday;
-    public Text info;
-    public Text prestige;
-    public Text championship;
-    public Text pets;
-    public Text carriers;
-    [Header("Item Panel")]
-    public GameObject itemPanel;
-    public Text[] items;
-    [Header("Skill Panel")]
-    public GameObject skillPanel;
-    public Text[] skills;
-    [Header("NPC Panel")]
-    public GameObject npcPanel;
-    public Text[] npc;
-    [Header("Tasting Panel")]
-    public GameObject tastingPanel;
-    public Text[] tasting;
+    public Transform info;
+    public Text[] textInfo;
+    [Header("Dice")]
+    public RandomDice[] dice;
+    public Text luck7d6;
+    public Text[] table;
 
-    [Header("Royal Trade War")]
-    public Text[] rtwRecords;
-    [Header("Minefield Assault")]
-    public Text[] maRecords;
-
-
-
-
-
-
-    private void Awake()
-    {
-        //items = itemPanel.GetComponentsInChildren<Text>();
-        //skills = skillPanel.GetComponentsInChildren<Text>();
-        npc = npcPanel.GetComponentsInChildren<Text>();
-        tasting = tastingPanel.GetComponentsInChildren<Text>();
-        equipment.Initialize();
-        bag.Initialize();
-        consumable.Initialize();
-        missionItem.Initialize();
-        book.Initialize();
-
-        talent.Initialize();
-        life.Initialize();
-        knowledge.Initialize();
-        spell.Initialize();
-
-        adventure.Initialize();
-        skill.Initialize();
-        shooting.Initialize();
-        magic.Initialize();
-        licence.Initialize();
-
-        //combat.Initialize();
-     
-    }
     // Update is called once per frame
     void Update()
     {
@@ -172,7 +123,33 @@ public class LoadPlayerData : MonoBehaviour
             index = 5;
             pages[index].SetActive(true);
         }
-
+        else if (Input.GetKeyDown(KeyCode.F6))
+        {
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 6;
+            pages[index].SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.F7))
+        {
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 7;
+            pages[index].SetActive(true);
+        }
+        else if (Input.GetKeyDown(KeyCode.F8))
+        {
+            for (int i = 0; i < pages.Length; i++)
+            {
+                pages[i].SetActive(false);
+            }
+            index = 8;
+            pages[index].SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.F12))
             StartCoroutine(ReloadPlayerList());
     }
@@ -193,7 +170,7 @@ public class LoadPlayerData : MonoBehaviour
 
                 for (int i = 0; i < contents.Length; i++)
                 {
-                    string nickname = contents[i].Split("\t")[0];
+                    string nickname = contents[i].Split("\t")[1];
                     GameObject tab;
                     Cat cat;
                     if (playerList.ContainsKey(nickname))
@@ -226,38 +203,8 @@ public class LoadPlayerData : MonoBehaviour
     public void ReloadPlayer()
     {
         StartCoroutine(ReloadAvatar());
-        StartCoroutine(ReloadInfo(input.text));
-        StartCoroutine(ReloadPrestige(input.text));
-        StartCoroutine(ReloadNPC(input.text));
-        StartCoroutine(ReloadTasting(input.text));
-        StartCoroutine(ReloadPets(input.text));
-        StartCoroutine(ReloadCarriers(input.text));
-        //StartCoroutine(ReloadSkills(input.text));
-        //StartCoroutine(ReloadItems(input.text));
-        //StartCoroutine(ReloadChampionship(input.text));
-
-        // Page 2
-        StartCoroutine(equipment.ReloadLists(input.text));
-        StartCoroutine(bag.ReloadLists(input.text));
-        StartCoroutine(consumable.ReloadLists(input.text));
-        StartCoroutine(missionItem.ReloadLists(input.text));
-        StartCoroutine(book.ReloadLists(input.text));
-
-        // Page 3
-        StartCoroutine(talent.ReloadLists(input.text));
-        StartCoroutine(life.ReloadLists(input.text));
-          StartCoroutine(knowledge.ReloadLists(input.text));
-        StartCoroutine(spell.ReloadLists(input.text));
-        //StartCoroutine(combat.ReloadLists(input.text));
-
-        // Page 5
-        StartCoroutine(adventure.ReloadLists(input.text));
-        StartCoroutine(skill.ReloadLists(input.text));
-        StartCoroutine(shooting.ReloadLists(input.text));
-        StartCoroutine(magic.ReloadLists(input.text));
-        StartCoroutine(licence.ReloadLists(input.text));
-        
-        StartCoroutine(record.ReloadText(input.text));
+        StartCoroutine(ReloadMain(input.text));
+        for (int i = 0; i < listLoader.Length; i++) { StartCoroutine(listLoader[i].LoadList(input.text)); }
     }
     void UpdateRank(string playerName) 
     {
@@ -269,11 +216,13 @@ public class LoadPlayerData : MonoBehaviour
         StartCoroutine(ambushEnigma.ReloadRank(playerName)); //伏击迷局
         StartCoroutine(liarsBar.ReloadRank(playerName)); //老猫酒馆
         StartCoroutine(catBingo.ReloadRank(playerName)); //猫猫宾果
+        StartCoroutine(catQuoridor.ReloadRank(playerName)); //猫猫破坏者
         StartCoroutine(sdol.ReloadRank(playerName)); //极限斗法
         StartCoroutine(throneRivalry.ReloadRank(playerName)); //王权纷争
         StartCoroutine(bicolorRacing.ReloadRank(playerName)); //双色斗猫
-    }
-       
+        StartCoroutine(nim15.ReloadRank(playerName)); //双色斗猫
+        StartCoroutine(nobilityBattlefield.ReloadRank(playerName)); //双色斗猫
+    }      
     IEnumerator ReloadCat(Cat cat)
     {
         string url = Application.streamingAssetsPath + "/" + cat.name.text + ".png";
@@ -302,9 +251,7 @@ public class LoadPlayerData : MonoBehaviour
             {
                 Texture2D img = DownloadHandlerTexture.GetContent(webRequest);
                 Sprite sp = Sprite.Create(img, new Rect(0, 0, img.width, img.height), new Vector2(0.5f, 0.5f));
-                player.sprite = sp;
-                cat.gameObject.SetActive(false);
-                player.enabled = true;              
+                player.sprite = sp;        
             }
             else
             {
@@ -324,41 +271,18 @@ public class LoadPlayerData : MonoBehaviour
                 Texture2D img = DownloadHandlerTexture.GetContent(webRequest);
                 Sprite sp = Sprite.Create(img, new Rect(0, 0, img.width, img.height), new Vector2(0.5f, 0.5f));
                 player.sprite = sp;
-                cat.gameObject.SetActive(false);
-                player.enabled = true;
-            }
-        }
-    }
-    IEnumerator ReloadInfo(string nick)
-    {
-        catbell.text = "";
-        casino.text = "";
-        judgement.text = "";
-        txtFaction.text = "";
-        txtPlayer.text = "";
-        txtBirthday.text = "";
-        string url = Application.streamingAssetsPath + "/" + nick + ".txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\r\n");
-                info.text = webRequest.downloadHandler.text.Split("\r\n")[5];
-                StartCoroutine(ReloadMain(nick));
-                UpdateRank(webRequest.downloadHandler.text.Split("|")[1]);
-            }
-            else
-            {
-                info.text = "无记录";
-                UpdateRank(nick);
             }
         }
     }
     public IEnumerator ReloadMain(string playerName)
     {
-        //yield return new WaitForSecondsRealtime(0.1f);
+        catbell.text = "";
+        casino.text = "";
+        judgement.text = "";
+        luck7d6.text = "";
+        for (int i = 3; i < table.Length; i++) { table[i].text =""; }
+        if (textInfo.Length == 0) textInfo = info.GetComponentsInChildren<Text>();
+        else { for (int i = 0; i < textInfo.Length; i++) { textInfo[i].text = ""; } }
         string url = Application.streamingAssetsPath + "/PlayerList.txt";
         using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
         {
@@ -369,296 +293,52 @@ public class LoadPlayerData : MonoBehaviour
                 string[] contents = webRequest.downloadHandler.text.Split("\r\n");
                 for (int order = 0; order < contents.Length; order++)
                 {
-                    if (contents[order].Contains(playerName))
-                    {
-                        string[] data = contents[order].Split("\t");
-                        catbell.text = data[3];
-                        int vip = int.Parse(data[5]);
-                        casino.text = data[4] + (vip > 0 ? ("(VIP" + data[5] + ")") : "");
-                        judgement.text = data[6];
-                        txtFaction.text = data[2];
-                        txtPlayer.text = data[1];
-                        txtBirthday.text = data[7];
+                    string[] data = contents[order].Split("\t");
+                    if (data[1] == playerName)
+                    {                        
+                        catbell.text = data[4];
+                        int vip = int.Parse(data[6]);
+                        casino.text = data[5] + (vip > 0 ? ("(VIP" + data[6] + ")") : "");
+                        judgement.text = data[7];
+                        textInfo[0].text = data[0]; // 降生日
+                        textInfo[1].text = data[2]; // 阵营
+                        textInfo[2].text = data[3]; // 玩家
+                        for (int i = 3; i < textInfo.Length; i++) { textInfo[i].text = data[i+5]; }
+                        textInfo[11].text += " cm"; // 身高
+                        textInfo[12].text += " kg"; // 体重
+                        luck7d6.text = data[19]; // 猫品
+                        for (int j = 0; j < dice.Length; j++) { dice[j].Display(int.Parse(data[20+j])); }
+                        CalculateDice();
+                        UpdateRank(data[3]);
                     }
                 }
             }
-            //else { for (int i = 0; i < list.Length; i++) { list[i].text = ""; } }
-        }
-    }
-    IEnumerator ReloadPrestige(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_皇城声望.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                prestige.text = webRequest.downloadHandler.text;
-                //Debug.Log(webRequest.downloadHandler.text);
-            }
             else
-            {
-                prestige.text = "未取得皇城声望";
-            }
+                UpdateRank("");
         }
     }
-    IEnumerator ReloadItems(string nick)
+    public void CalculateDice() 
     {
-        string url = Application.streamingAssetsPath + "/" + nick + "_物品.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\r\n");
-                for (int i = 0; i < items.Length; i++)
-                {
-                    if (i < contents.Length)
-                        items[i].text = contents[i];
-                    else
-                        items[i].text = "";
-                }
-                //print(contents.Length);
-                //item.text = webRequest.downloadHandler.text;
-                //Debug.Log(webRequest.downloadHandler.text);
-            }
-            else
-            {
-                for (int i = 0; i < items.Length; i++)
-                {
-                    items[i].text = "";
-                }
-                //item.text = "无任何物品";
-            }
-        }
+        table[0].text = dice[6].Index.ToString(); //1d6最大
+        table[1].text = dice[3].Index.ToString(); //1d6中位
+        table[2].text = dice[0].Index.ToString(); //1d6最小
+        table[3].text = (dice[6].Index+ dice[5].Index).ToString(); //2d6最大
+        table[4].text = (dice[6].Index+ dice[0].Index).ToString(); //2d6中位
+        table[5].text = (dice[1].Index+ dice[0].Index).ToString(); //2d6最小
+        table[6].text = (dice[6].Index+ dice[5].Index+ dice[4].Index).ToString(); //3d6最大
+        table[7].text = (dice[6].Index+ dice[5].Index+ dice[0].Index).ToString(); //3d6极大
+        table[8].text = (dice[4].Index+ dice[3].Index+ dice[2].Index).ToString(); //3d6中位
+        table[9].text = (dice[6].Index+ dice[1].Index+ dice[0].Index).ToString(); //3d6极小
+        table[10].text = (dice[2].Index+ dice[1].Index+ dice[0].Index).ToString(); //3d6最小
+        table[11].text = (dice[6].Index+ dice[5].Index+ dice[4].Index + dice[3].Index).ToString(); //4d6最大
+        table[12].text = (dice[6].Index+ dice[5].Index+ dice[1].Index + dice[0].Index).ToString(); //4d6中位
+        table[13].text = (dice[3].Index+ dice[2].Index+ dice[1].Index + dice[0].Index).ToString(); //4d6最小
+        table[14].text = (dice[6].Index+ dice[5].Index+ dice[4].Index + dice[3].Index + dice[2].Index).ToString(); //5d6最大
+        table[15].text = (dice[6].Index+ dice[5].Index+ dice[4].Index + dice[1].Index + dice[0].Index).ToString(); //5d6极大
+        table[16].text = (dice[5].Index+ dice[4].Index+ dice[3].Index + dice[2].Index + dice[1].Index).ToString(); //5d6中位
+        table[17].text = (dice[6].Index+ dice[5].Index+ dice[2].Index + dice[1].Index + dice[0].Index).ToString(); //5d6极小
+        table[18].text = (dice[4].Index+ dice[3].Index+ dice[2].Index + dice[1].Index + dice[0].Index).ToString(); //5d6最小
     }
-    IEnumerator ReloadSkills(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_技能.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\r\n");
-                for (int i = 0; i < skills.Length; i++)
-                {
-                    if (i < contents.Length)
-                        skills[i].text = contents[i];
-                    else
-                        skills[i].text = "";
-                }
-            }
-            else
-            {
-                for (int i = 0; i < skills.Length; i++)
-                {
-                    skills[i].text = "";
-                }
-            }
-        }
-    }
-    IEnumerator ReloadChampionship(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_战绩.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                championship.text = webRequest.downloadHandler.text;
-            }
-            else
-            {
-                championship.text = "无战绩记录";
-            }
-        }
-    }
-    
-    IEnumerator ReloadRoyalTradeWar(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_皇家商贸战.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\t");
-                for (int i = 0; i < rtwRecords.Length; i++)
-                {
-                    if (i < contents.Length)
-                        rtwRecords[i].text = contents[i];
-                    else
-                        rtwRecords[i].text = "";
-                }
-            }
-            else
-            {
-                for (int i = 0; i < rtwRecords.Length; i++)
-                {
-                    rtwRecords[i].text = "";
-                }
-            }
-        }
-    }
-    IEnumerator ReloadMinefieldAssault(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_雷区突击.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\t");
-                for (int i = 0; i < maRecords.Length; i++)
-                {
-                    if (i < contents.Length)
-                        maRecords[i].text = contents[i];
-                    else
-                        maRecords[i].text = "";
-                }
-            }
-            else
-            {
-                for (int i = 0; i < maRecords.Length; i++)
-                {
-                    maRecords[i].text = "";
-                }
-            }
-        }
-    }
-    IEnumerator ReloadNPC(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_NPC.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\r\n");
-                for (int i = 0; i < npc.Length; i++)
-                {
-                    if (i < contents.Length)
-                        npc[i].text = contents[i];
-                    else
-                        npc[i].text = "";
-                }
-            }
-            else
-            {
-                for (int i = 0; i < npc.Length; i++)
-                {
-                    npc[i].text = "";
-                }
-            }
-        }
-    }
-    IEnumerator ReloadTasting(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_品鉴.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                string[] contents = webRequest.downloadHandler.text.Split("\r\n");
-                for (int i = 0; i < tasting.Length; i++)
-                {
-                    if (i < contents.Length)
-                        tasting[i].text = contents[i];
-                    else
-                        tasting[i].text = "";
-                }
-            }
-            else
-            {
-                for (int i = 0; i < tasting.Length; i++)
-                {
-                    tasting[i].text = "";
-                }
-            }
-        }
-    }
-    IEnumerator ReloadPets(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_宠物.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                pets.text = webRequest.downloadHandler.text;
-                //Debug.Log(webRequest.downloadHandler.text);
-            }
-            else
-            {
-                pets.text = "";
-            }
-        }
-    }
-    IEnumerator ReloadCarriers(string nick)
-    {
-        string url = Application.streamingAssetsPath + "/" + nick + "_载具.txt";
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                carriers.text = webRequest.downloadHandler.text;
-                //Debug.Log(webRequest.downloadHandler.text);
-            }
-            else
-            {
-                carriers.text = "";
-            }
-        }
-    }
-
-    [Header("Page 2 Equipment")]
-    public ReloadList equipment;
-    [Header("Page 2 Bag")]
-    public ReloadList bag;
-    [Header("Page 2 Consumable")]
-    public ReloadList consumable;
-    [Header("Page 2 Mission Item")]
-    public ReloadList missionItem;
-    [Header("Page 2 Book")]
-    public ReloadList book;
-
-    [Header("Page 3 Talent")]
-    public ReloadList talent;
-    [Header("Page 3 Life")]
-    public ReloadList life;
-    [Header("Page 3 Knowledge")]
-    public ReloadList knowledge;
-    [Header("Page 3 Spell")]
-    public ReloadList spell;
-    [Header("Page 3 Combat")]
-    public ReloadList combat;
-
-
-    [Header("Page 5 Adventure")]
-    public ReloadList adventure;
-    [Header("Page 5 Skill")]
-    public ReloadList skill;
-    [Header("Page 5 Shooting")]
-    public ReloadList shooting;
-    [Header("Page 5 Magic")]
-    public ReloadList magic;
-    [Header("Page 5 License")]
-    public ReloadList licence;
-
-
 
     [Header("<color=green>驿站风云 Stage Clash")] //驿站风云
     public ReloadList stageClash;
@@ -676,82 +356,26 @@ public class LoadPlayerData : MonoBehaviour
     public ReloadList liarsBar;
     [Header("<color=green>猫猫宾果 Cat Bingo</color>")] //猫猫宾果
     public ReloadList catBingo;
+    [Header("<color=green>猫猫破坏者 Cat Quoridor</color>")] //猫猫破坏者
+    public ReloadList catQuoridor;
     [Header("<color=green>极限斗法 Sorcery Duel of Limits</color>")] //极限斗法
     public ReloadList sdol;
     [Header("<color=green>王权纷争 Throne Rivalry</color>")] //王权纷争
     public ReloadList throneRivalry;
     [Header("<color=green>双色斗猫 Bicolor Racing</color>")] //双色斗猫
     public ReloadList bicolorRacing;
-    [Header("Record")]
-    public ReloadList record;
-
+    [Header("<color=green>尼姆15 Nim 15</color>")] //尼姆15
+    public ReloadList nim15;
+    [Header("<color=green>贵族战场 Nobility Battlefield</color>")] //贵族战场
+    public ReloadList nobilityBattlefield;
 
     [Serializable]
     public class ReloadList
     {
         public string title;
         public GameObject panel;
-        public Text[] list;       
-        public void Initialize()
-        {
-            list = panel.GetComponentsInChildren<Text>();
-        }
-        public IEnumerator ReloadText(string nick)
-        {
-            string url = Application.streamingAssetsPath + "/" + nick + "_" + title + ".txt";
-            using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-            {
-                // Request and wait for the desired page.
-                yield return webRequest.SendWebRequest();
-                if (string.IsNullOrEmpty(webRequest.error))
-                {
-                    list[0].text = webRequest.downloadHandler.text;
-                }
-                else
-                {
-                    list[0].text = "无记录";
-                }
-            }
-        }
-        public IEnumerator ReloadLists(string nick)
-        {
-            string url = Application.streamingAssetsPath + "/" + nick + "_"+ title+".txt";
-            using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-            {
-                // Request and wait for the desired page.
-                yield return webRequest.SendWebRequest();
-                if (string.IsNullOrEmpty(webRequest.error))
-                {
-                    string[] contents = webRequest.downloadHandler.text.Split("\r\n");
-                    for (int i = 0; i < list.Length; i++)
-                    {
-                        if (i < contents.Length) list[i].text = contents[i];
-                        else list[i].text = "";
-                    }
-                }
-                else { for (int i = 0; i < list.Length; i++) { list[i].text = ""; } }
-            }
-        }
-        public IEnumerator ReloadRecords(string nick)
-        {
-            string url = Application.streamingAssetsPath + "/" + nick + "_" + title + ".txt";
-            using (UnityWebRequest webRequest = UnityWebRequest.Get(url))
-            {
-                // Request and wait for the desired page.
-                yield return webRequest.SendWebRequest();
-                if (string.IsNullOrEmpty(webRequest.error))
-                {
-                    string[] contents = webRequest.downloadHandler.text.Split("\t");
-                    for (int i = 0; i < list.Length; i++)
-                    {
-                        if (i < contents.Length) list[i].text = contents[i];
-                        else list[i].text = "";
-                    }
-                }
-                else { for (int i = 0; i < list.Length; i++) { list[i].text = ""; } }
-            }
-        }       
-        public IEnumerator ReloadRank(string playerName)
+        public Text[] list;
+    public IEnumerator ReloadRank(string playerName)
         {
             for (int i = 0; i < list.Length; i++) { list[i].text = ""; }
             //yield return new WaitForSecondsRealtime(0.1f);

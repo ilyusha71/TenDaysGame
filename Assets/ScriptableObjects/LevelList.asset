@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee480f84314e44e48906e80fd193adcd, type: 3}
+  m_Name: LevelList
+  m_EditorClassIdentifier: 
+  level:
+  - sprite: {fileID: -1911382546, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.16, g: 0.09486167, b: 0.053754948, a: 1}
+  - sprite: {fileID: -432144067, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.16, g: 0.14745098, b: 0.10854902, a: 1}
+  - sprite: {fileID: 1486574293, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.08909805, g: 0.16, b: 0.056470584, a: 1}
+  - sprite: {fileID: 1486574293, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.09019608, g: 0.16078432, b: 0.05490196, a: 1}
+  - sprite: {fileID: -1734026376, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.053754948, g: 0.1366008, b: 0.16, a: 1}
+  - sprite: {fileID: -1734026376, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.05490196, g: 0.13725491, b: 0.16078432, a: 1}
+  - sprite: {fileID: -1734026376, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.05490196, g: 0.13725491, b: 0.16078432, a: 1}
+  - sprite: {fileID: -1318836985, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.16, g: 0.06811245, b: 0.12851404, a: 1}
+  - sprite: {fileID: -1318836985, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.16078432, g: 0.06666667, b: 0.12941177, a: 1}
+  - sprite: {fileID: -1318836985, guid: c722cb83c9b2c734fb86f634c4763409, type: 3}
+    color: {r: 0.16078432, g: 0.06666667, b: 0.12941177, a: 1}

@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 5194522247901418763}
   - component: {fileID: 1253648282051822815}
   m_Layer: 5
-  m_Name: Black Background
+  m_Name: Black Baseplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

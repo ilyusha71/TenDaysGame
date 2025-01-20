@@ -943,8 +943,6 @@ MonoBehaviour:
   - {fileID: 549575861}
   - {fileID: 143408221}
   - {fileID: 1796696925}
-  lotteryPool: 
-  pos: []
   shuffle: 0
 --- !u!1 &152833449
 GameObject:
@@ -2148,7 +2146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &309854808
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3478,8 +3476,6 @@ MonoBehaviour:
   - {fileID: 732428771}
   - {fileID: 80773728}
   - {fileID: 1355661307}
-  lotteryPool: 
-  pos: []
   shuffle: 0
 --- !u!224 &549483547 stripped
 RectTransform:
@@ -10583,7 +10579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1347956285
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10631,8 +10627,6 @@ MonoBehaviour:
   - {fileID: 1143874267}
   - {fileID: 1442078924}
   - {fileID: 1126548154}
-  lotteryPool: 
-  pos: []
   shuffle: 0
 --- !u!114 &1347956287
 MonoBehaviour:
@@ -10667,8 +10661,6 @@ MonoBehaviour:
   - {fileID: 240178998}
   - {fileID: 1864577974}
   - {fileID: 786734132}
-  lotteryPool: 
-  pos: []
   shuffle: 1
 --- !u!224 &1347956288
 RectTransform:
@@ -13491,8 +13483,6 @@ MonoBehaviour:
   - {fileID: 567658539}
   - {fileID: 942616187}
   - {fileID: 228052780}
-  lotteryPool: 
-  pos: []
   shuffle: 0
 --- !u!1 &1617530393
 GameObject:

@@ -10,7 +10,8 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
     public bool store = false;
     public Transform clonePool;
     [Header("General")]
-    public bool copy = true;
+    public bool canDelete=false;
+    public bool canCopy = false;
     public bool reversible = false;
     public bool hasAlphaHit = false;
     public float alphaHitThreshold = 0.3f;
@@ -46,7 +47,7 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
         {
             transform.localScale = new Vector3(-1 * transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
-        if (Input.GetMouseButtonDown(1) && copy)
+        if (Input.GetMouseButtonDown(1) && canCopy)
         {
             GameObject go = Instantiate(gameObject);
             go.transform.SetParent(transform.parent, false);
@@ -75,7 +76,15 @@ public class DragChess : MonoBehaviour, IPointerDownHandler,IDragHandler ,IDropH
             transform.SetParent(clonePool);
             GetComponent<DragChess>().store = false;
         }
-        if (Input.GetKey(KeyCode.Delete) && !store)
+        if (Input.GetMouseButtonDown(1) && store)
+        {
+            GameObject go = Instantiate(gameObject);
+            go.name = name;
+            go.transform.SetParent(transform.parent, false);
+            go.transform.position = transform.position;
+            GetComponent<DragChess>().store = false;
+        }
+        if (Input.GetKey(KeyCode.Delete) && !store && canDelete)
             Destroy(gameObject);
 
         if (!fixOrder)

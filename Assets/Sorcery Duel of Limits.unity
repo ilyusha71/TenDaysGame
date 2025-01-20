@@ -390,6 +390,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -540,6 +544,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 39ea6d432addab340aa8086dd3f635aa, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -737,6 +749,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1127080875, guid: bca17aa39a979854b9fd7a219310a795, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -1009,6 +1029,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 599520957, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -1265,6 +1293,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -1465,6 +1497,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1221415706, guid: bca17aa39a979854b9fd7a219310a795, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -2227,6 +2267,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: b4ed35dc36258bf43867b34fdee62b95, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -2345,6 +2393,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 780217878, guid: 59f17b03ebe724240b5eb81643514806, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -2461,6 +2517,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1464395624, guid: 59f17b03ebe724240b5eb81643514806, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -2583,6 +2647,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1367770263, guid: bca17aa39a979854b9fd7a219310a795, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -3345,6 +3417,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -3389,6 +3465,8 @@ MonoBehaviour:
   count: {fileID: 752449627}
   max: 17
   add: 0
+  level: 1
+  hideZero: 0
 --- !u!1 &806875731
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,6 +3737,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -422057056, guid: bca17aa39a979854b9fd7a219310a795, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -4161,6 +4247,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1516280199, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -4301,6 +4395,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 408322014, guid: bca17aa39a979854b9fd7a219310a795, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -4509,6 +4611,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1874087716, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -4627,6 +4737,10 @@ PrefabInstance:
       objectReference: {fileID: 30357175, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: store
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
@@ -4753,6 +4867,10 @@ PrefabInstance:
       objectReference: {fileID: 675595077, guid: bca17aa39a979854b9fd7a219310a795, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: store
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
@@ -4985,10 +5103,10 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2875516452911435921, guid: 46877b15c01820241816da9163262b66, type: 3}
-      insertIndex: 6
+      insertIndex: -1
       addedObject: {fileID: 5881773752557157390}
     - targetCorrespondingSourceObject: {fileID: 8983432953401157528, guid: 46877b15c01820241816da9163262b66, type: 3}
-      insertIndex: 6
+      insertIndex: -1
       addedObject: {fileID: 1233558042}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46877b15c01820241816da9163262b66, type: 3}
@@ -5101,6 +5219,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -1413844526, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -5175,7 +5301,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1143937197}
   - component: {fileID: 1143937199}
-  - component: {fileID: 1143937198}
   m_Layer: 5
   m_Name: Deck
   m_TagString: Untagged
@@ -5205,24 +5330,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -223}
   m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1143937198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143937196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a37db2b142db2dc499ad4d31c1cebc83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 727900006}
-  - {fileID: 1010595538}
-  - {fileID: 31580301}
-  lotteryPool: []
-  pos: []
 --- !u!114 &1143937199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5373,6 +5480,10 @@ PrefabInstance:
       objectReference: {fileID: 1720967122, guid: 59f17b03ebe724240b5eb81643514806, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: store
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
@@ -5956,6 +6067,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1880675762, guid: bca17aa39a979854b9fd7a219310a795, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -6072,6 +6191,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -523438552, guid: 59f17b03ebe724240b5eb81643514806, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -6713,6 +6840,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: dedb5490c9ca0cc44b0e5e45a825ac03, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -6834,6 +6969,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -97607782, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -7084,6 +7227,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2089807692, guid: 59f17b03ebe724240b5eb81643514806, type: 3}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -7107,7 +7258,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1582776905}
   - component: {fileID: 1582776906}
-  - component: {fileID: 1582776907}
   m_Layer: 5
   m_Name: Deck
   m_TagString: Untagged
@@ -7161,24 +7311,6 @@ MonoBehaviour:
   m_Spacing: {x: 18, y: 27}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!114 &1582776907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1582776904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a37db2b142db2dc499ad4d31c1cebc83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slots:
-  - {fileID: 1177951472}
-  - {fileID: 208832223}
-  - {fileID: 1045829474}
-  lotteryPool: []
-  pos: []
 --- !u!1001 &1596112338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7445,6 +7577,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 34e657d93ef568d4a8eaeb0e3ad6877c, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -7855,6 +7995,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -657764284, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -8387,6 +8535,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1751178846, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -9167,6 +9323,14 @@ PrefabInstance:
       value: "\u9B54\u529B\u6C34\u7403"
       objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
       objectReference: {fileID: 1737170325}
@@ -9358,6 +9522,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -169181238, guid: 59f17b03ebe724240b5eb81643514806, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 
@@ -9986,6 +10158,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 431264221, guid: 97733eea84a82bb42b543db818a5f6ee, type: 3}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: isStore
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
+      propertyPath: usePool
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7493236282566347871, guid: c8fbd644b78da4f448de3e6719685a4d, type: 3}
       propertyPath: clonePool
       value: 

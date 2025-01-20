@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Nobility Battlefield-ChaoZiSheGuoFengHongShuJian
   m_EditorClassIdentifier: 
-  hashCode: 1661403316
+  hashCode: -76976140
   material: {fileID: 448042792235960311}
-  materialHashCode: -303748844
+  materialHashCode: -632471340
   m_Version: 1.1.0
   m_SourceFontFileGUID: 2bda49e7f51872b429a97cfff2d4a0d4
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 2bda49e7f51872b429a97cfff2d4a0d4, type: 3}
@@ -489,8 +489,8 @@ Material:
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
+    - _StencilReadMask: 1
+    - _StencilWriteMask: 0
     - _TextureHeight: 1024
     - _TextureWidth: 1024
     - _UnderlayDilate: 0

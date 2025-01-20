@@ -8968,8 +8968,6 @@ MonoBehaviour:
   - {fileID: 9043495}
   - {fileID: 1247999365}
   - {fileID: 354775305}
-  lotteryPool: []
-  pos: []
   shuffle: 0
 --- !u!1001 &353845395
 PrefabInstance:
@@ -28888,8 +28886,6 @@ MonoBehaviour:
   - {fileID: 796723579}
   - {fileID: 42735796}
   - {fileID: 1441431490}
-  lotteryPool: []
-  pos: []
   shuffle: 0
 --- !u!1001 &1390259714
 PrefabInstance:
@@ -34400,7 +34396,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e6c767bbe7a4f4c4783cf0557f575fee, type: 3}
     - target: {fileID: 2336917691765579773, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2680948426513743689, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Sprite
@@ -34572,7 +34568,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 9c8285046dd2c6d45aca6864e6bcd8c0, type: 3}
     - target: {fileID: 8872676292098730228, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9113269373097609280, guid: 46877b15c01820241816da9163262b66, type: 3}
       propertyPath: m_Sprite

@@ -1,0 +1,6 @@
+1|AWM狙击枪<color=cyan>(主)</color>
+5|埃里克森双手大剑<color=cyan>(主)</color>
+4|海盗迅雷长弓<color=cyan>(主)</color>
+4|飞神匕首一对<color=cyan>(副)</color>
+5|花刻木杖<color=cyan>(主)</color>
+4|岚之权杖<color=cyan>(副)</color>

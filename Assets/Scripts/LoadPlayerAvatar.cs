@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,57 +7,44 @@ using UnityEngine.UI;
 
 public class LoadPlayerAvatar : MonoBehaviour
 {
-    public GameObject[] cat;
     public Image[] player;
     public InputField[] input;
-
+    Sprite[] avatar;
+    public static LoadPlayerAvatar Instance { get; private set; }
+    private void Awake() => Instance = this;
     // Start is called before the first frame update
     void Start()
     {
-        
+        avatar = new Sprite[player.Length];
+        for (int i = 0; i < avatar.Length; i++)
+        {
+            avatar[i]=player[i].sprite;
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Home))
-            Cat();
-        //if (Input.GetKeyDown(KeyCode.Keypad1))
-        //    StartCoroutine(Reload(1));
-        //if (Input.GetKeyDown(KeyCode.Keypad2))
-        //    StartCoroutine(Reload(2));
-        //if (Input.GetKeyDown(KeyCode.Keypad4))
-        //    StartCoroutine(ReloadByName(1));
-        //if (Input.GetKeyDown(KeyCode.Keypad5))
-        //    StartCoroutine(ReloadByName(2));
-
+            ResetAvatar();
     }
-    public void Cat()
+    public void ResetAvatar()
     {
-        for (int i = 0; i < cat.Length; i++)
-        {
-            cat[i].gameObject.SetActive(true);
-            player[i].enabled = false;
+        for (int i = 0; i < avatar.Length; i++)
+        { 
+            player[i].sprite = avatar[i];
         }
     }
     public void ChangeAvatar(int index, Sprite sp) 
     {
-        cat[index].gameObject.SetActive(false);
-        player[index].enabled = true;
         player[index].sprite = sp;
     }
-    //public void Reload(int i)
-    //{
-    //    cat[i-1].gameObject.SetActive(false);
-    //    Texture2D img = Resources.Load<Texture2D>("P" + i.ToString());
-    //    Sprite sp = Sprite.Create(img, new Rect(0, 0, img.width, img.height), new Vector2(0.5f, 0.5f));
-    //    player[i - 1].sprite = sp;
-    //    player[i - 1].enabled = true;
-    //}
-    IEnumerator Reload(int i)
+    public void LoadAvatar(int index)
     {
-
-        string url = Application.streamingAssetsPath + "/P" + i.ToString() + ".png";
+        StartCoroutine(ReloadByName(index));
+    }
+    IEnumerator ReloadByName(int index)
+    {
+        string url = Application.streamingAssetsPath + "/" + input[index].text + ".png";
         using (UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(url))
         {
             // Request and wait for the desired page.
@@ -65,38 +53,15 @@ public class LoadPlayerAvatar : MonoBehaviour
             {
                 Texture2D img = DownloadHandlerTexture.GetContent(webRequest);
                 Sprite sp = Sprite.Create(img, new Rect(0, 0, img.width, img.height), new Vector2(0.5f, 0.5f));
-                player[i - 1].sprite = sp;
-                cat[i - 1].gameObject.SetActive(false);
-                player[i - 1].enabled = true;
-            }
-        }
-    }
-    public void ReloadAvatar(int i)
-    {
-        StartCoroutine(ReloadByName(i));
-    }
-    IEnumerator ReloadByName(int i)
-    {
-        string url = Application.streamingAssetsPath + "/" + input[i-1].text + ".png";
-        using (UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(url))
-        {
-            // Request and wait for the desired page.
-            yield return webRequest.SendWebRequest();
-            if (string.IsNullOrEmpty(webRequest.error))
-            {
-                Texture2D img = DownloadHandlerTexture.GetContent(webRequest);
-                Sprite sp = Sprite.Create(img, new Rect(0, 0, img.width, img.height), new Vector2(0.5f, 0.5f));
-                player[i - 1].sprite = sp;
-                cat[i - 1].gameObject.SetActive(false);
-                player[i - 1].enabled = true;
+                player[index].sprite = sp;
             }
             else
             {
-                StartCoroutine(ReloadMao(i));
+                StartCoroutine(ReloadMao(index));
             }
         }
     }
-    IEnumerator ReloadMao(int i)
+    IEnumerator ReloadMao(int index)
     {
         string url = Application.streamingAssetsPath + "/qunmao.png";
         using (UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(url))
@@ -107,9 +72,7 @@ public class LoadPlayerAvatar : MonoBehaviour
             {
                 Texture2D img = DownloadHandlerTexture.GetContent(webRequest);
                 Sprite sp = Sprite.Create(img, new Rect(0, 0, img.width, img.height), new Vector2(0.5f, 0.5f));
-                player[i - 1].sprite = sp;
-                cat[i - 1].gameObject.SetActive(false);
-                player[i - 1].enabled = true;
+                player[index].sprite = sp;
             }          
         }
     }

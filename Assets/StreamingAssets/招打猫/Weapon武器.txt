@@ -1,0 +1,8 @@
+1|AWM狙击枪x2<color=cyan>(主)</color>
+6|RPG多功能火箭筒<color=cyan>(主)</color>
+7|废猫斩天剑<color=cyan>(主)</color>
+6|火神权杖<color=cyan>(主)</color>
+1|黑猫铁棍<color=cyan>(副)</color>
+7|血滴子<color=cyan>(副)</color>
+7|红眼一号<color=cyan>(主)</color>
+2|锦标赛保底升蓝x3

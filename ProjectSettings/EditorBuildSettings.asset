@@ -86,4 +86,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Stage Clash.unity
     guid: 4a9102c735adeb04d9f06b7f4db7ca3a
+  - enabled: 1
+    path: Assets/The Manor of Nightfall.unity
+    guid: 535bac63bf9fed04b86e152a081fa8c5
+  - enabled: 1
+    path: Assets/Cat Card 1.unity
+    guid: 70a78e30e2e4d344dbe9f0eac461ea5f
+  - enabled: 1
+    path: Assets/DuelMap.unity
+    guid: d46acd78090a7994b8ad140cb5427a0e
   m_configObjects: {}

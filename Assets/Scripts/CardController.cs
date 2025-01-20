@@ -4,53 +4,27 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class CardController : DragChess
+public class CardController : DraggableUI, ISelectHandler, IDeselectHandler
 {
     [Header("Card Controller")]
+    public Image halo;
     public GameObject face;
     public GameObject back;
-    public GameObject front;
-    //public bool random = false;
-    public Image imgFace;
-    public Sprite[] cardSprites;
-
     public bool playcard;
     public Transform cardPool;
 
     public override void OnPointerDown(PointerEventData data)
     {
-        EventSystem.current.SetSelectedGameObject(gameObject);
-        if (Input.GetMouseButtonDown(1) && copy)
-        {
-            GameObject go = Instantiate(gameObject);
-            go.transform.SetParent(transform.parent, false);
-            go.transform.position = transform.position;
-        }
-        if (Input.GetMouseButtonDown(1) && front)
-            front.SetActive(!front.activeSelf);
-        if ((Input.GetMouseButtonDown(2) || data.clickCount > 0) && cardSprites.Length > 0)
-            imgFace.sprite = cardSprites[Random.Range(0, cardSprites.Length)];
-
-        if (Input.GetMouseButtonDown(0) && store)
-        {
-            GameObject go = Instantiate(gameObject);
-            go.name = name;
-            go.transform.SetParent(transform.parent, false);
-            go.transform.position = transform.position;
-
-            transform.SetParent(clonePool);
-            GetComponent<CardController>().store = false;
-        }
+        base.OnPointerDown(data);
         if (Input.GetMouseButtonDown(1) && back)
             Flop();
-        if (Input.GetMouseButtonDown(1) && playcard)
+        if ((Input.GetMouseButtonDown(0)|| Input.GetMouseButtonDown(1)) && playcard)
             transform.SetParent(cardPool, true);
-        if (Input.GetKey(KeyCode.Delete) && !store)
-            Destroy(gameObject);
-
-        if (!fixOrder)
-            transform.SetSiblingIndex(99);
-        pos = transform.position - Input.mousePosition;
+    }
+    public void Open()
+    {
+        face.SetActive(true);
+        back.SetActive(false);
     }
     public void Flop()
     {
@@ -67,5 +41,17 @@ public class CardController : DragChess
         transform.SetParent(cardPool, true);
         face.SetActive(true);
         back.SetActive(false);
+    }
+    private void OnEnable()
+    {
+        if (halo) halo.enabled = false;
+    }
+    public void OnSelect(BaseEventData eventData)
+    {
+        if (halo) halo.enabled = true;
+    }
+    public void OnDeselect(BaseEventData eventData)
+    {
+        if (halo) halo.enabled = false;
     }
 }
